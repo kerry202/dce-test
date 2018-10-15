@@ -31,14 +31,14 @@ android {
         debug {
             keyAlias 'oax'
             keyPassword 'oax2018'
-            storeFile file('D:\\Test2\\dce-test\\app/keystore.jks')
+            storeFile file('D:\\Test2\\dce-test\\app\\keystore.jks')
             storePassword 'oax2018'
         }
 
         release {
             keyAlias 'oax'
             keyPassword 'oax2018'
-            storeFile file('D:\\Test2\\dce-test\\app/keystore.jks')
+            storeFile file('D:\\Test2\\dce-test\\app\\keystore.jks')
             storePassword 'oax2018'
         }
     }
