@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <cn.dagongniu.oax.kline.view.KLineToolbar
+        android:id="@+id/kline_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kline_toolbar"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/div_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d02"
+                android:background="@color/lightgray" />
+
+            <cn.dagongniu.oax.kline.view.CurrentTransactionPriceView
+                android:id="@+id/current_transaction_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/div_line" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_time_select_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d90"
+                android:layout_below="@+id/current_transaction_price"
+                android:background="@color/minute_black"
+                android:gravity="center_vertical">
+
+                <com.flyco.tablayout.CommonTabLayout
+                    android:id="@+id/time_select_tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/d100"
+                    app:tl_textsize="@dimen/d34" />
+
+                <ImageView
+                    android:id="@+id/full_screen"
+                    android:layout_width="@dimen/d41"
+                    android:layout_height="@dimen/d41"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:background="@drawable/kline_full_screen"
+                    android:padding="5dp" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <FrameLayout
+                android:id="@+id/combinedchart_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d500"
+                android:layout_below="@+id/rl_time_select_container" />
+
+            <cn.dagongniu.oax.kline.view.CurrentItemInfoView
+                android:id="@+id/currentiteminfoview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/current_transaction_price"
+                android:background="@color/minute_black"
+                android:visibility="gone" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/combinedchart_container"
+                android:layout_marginBottom="@dimen/d100"
+                android:orientation="vertical">
+
+                <net.lucode.hackware.magicindicator.MagicIndicator
+                    android:id="@+id/magic_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d70" />
+
+                <cn.dagongniu.oax.customview.CustomViewPager
+                    android:id="@+id/main_market_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </ScrollView>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d100"
+        android:layout_alignParentBottom="true"
+        android:background="@color/df_tab_bg"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="@dimen/d341"
+            android:layout_height="@dimen/d70"
+            android:background="@color/kline_buy_bg"
+            android:gravity="center"
+            android:text="@string/buy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d24" />
+
+        <TextView
+            android:id="@+id/tv_sell"
+            android:layout_width="@dimen/d341"
+            android:layout_height="@dimen/d70"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_toRightOf="@+id/tv_buy"
+            android:background="@color/kline_sell_bg"
+            android:gravity="center"
+            android:text="@string/sell"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d24" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">DCE</string>
+	<string name="reg_phone">手机注册</string>
+	<string name="reg_emil">邮箱注册</string>
+	<string name="reg_phone_emil_hint">请输入手机号码或邮箱</string>
+	<string name="reg_code_hint">请输入验证码</string>
+	<string name="reg_get_code">获取验证码</string>
+	<string name="reg_set_pwd">请设置登陆密码</string>
+	<string name="reg_yes_pwd">请确定登陆密码</string>
+	<string name="reg_yjzhs">已有账户</string>
+	<string name="reg_login">请登录</string>
+	<string name="deal_setpwd">请设置交易密码</string>
+	<string name="deal_yespwd">请确定交易密码</string>
+	<string name="next">下一步</string>
+	<string name="home">首页</string>
+	<string name="home_bz">币种</string>
+	<string name="home_jg_btc">价格（BTC）</string>
+	<string name="home_jg_eth">价格（ETH）</string>
+	<string name="home_zdf">涨跌幅</string>
+	<string name="trading">交易</string>
+	<string name="buy">买入</string>
+	<string name="sell">卖出</string>
+	<string name="refresh_ok">刷新成功</string>
+	<string name="load_ok">加载成功</string>
+	<string name="notice_1">关于五月份上线交易平台的公告</string>
+	<string name="notice_2">至于活动什么的肯定都是放这里的</string>
+	<string name="notice_3">至于活动什么的肯定都是放这里的至于活动什么的肯定都是放这里的至于活动什么的肯定都是放这里的至于活动什么的肯定都是放这里的至于活动什么的肯定都是放这</string>
+	<string name="setting_language_title">多语言设置</string>
+	<string name="setting_language_auto">跟随系统</string>
+	<string name="setting_language_english">English</string>
+	<string name="setting_simplified_chinese">简体中文</string>
+
+	<!--刷新加载-->
+	<string name="srl_header_pulling">下拉可以刷新</string>
+	<string name="srl_header_refreshing">正在刷新…</string>
+	<string name="srl_header_loading">正在加载…</string>
+	<string name="srl_header_release">释放立即刷新</string>
+	<string name="srl_header_finish">刷新完成</string>
+	<string name="srl_header_failed">刷新失败</string>
+	<string name="srl_header_update">上次更新 M-d HH:mm</string>
+	<string name="srl_header_secondary">释放进入二楼</string>
+
+	<string name="srl_footer_pulling">上拉加载更多</string>
+	<string name="srl_footer_release">释放立即加载</string>
+	<string name="srl_footer_loading">正在加载…</string>
+	<string name="srl_footer_refreshing">正在刷新…</string>
+	<string name="srl_footer_finish">加载完成</string>
+	<string name="srl_footer_failed">加载失败</string>
+	<string name="srl_footer_nothing">没有更多数据了</string>
+
+	<array name="entrustnadorder">
+		<item>委托</item>
+		<item>订单</item>
+	</array>
+</resources>

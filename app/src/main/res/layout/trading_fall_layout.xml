@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.dagongniu.oax.trading.view.TradingFallView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/d10"
+    android:paddingRight="@dimen/d20"
+    android:background="@color/white">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/fall_rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d60"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fall_jiage"
+                android:textColor="@color/df_font_gray"
+                android:textSize="@dimen/d22" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/fall_count"
+                android:textColor="@color/df_font_gray"
+                android:textSize="@dimen/d22" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fall_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fall_rl_title"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</cn.dagongniu.oax.trading.view.TradingFallView>

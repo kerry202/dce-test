@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/d10"
+    android:paddingTop="@dimen/d10">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d30"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/current_item_info_text_des_width"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/kline_current_item_info_high"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+
+            <TextView
+                android:id="@+id/tv_high"
+                android:layout_width="@dimen/current_item_info_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/current_item_info_text_margin_left"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/current_item_info_text_des_width"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/kline_current_item_info_low"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+
+            <TextView
+                android:id="@+id/tv_low"
+                android:layout_width="@dimen/current_item_info_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/current_item_info_text_margin_left"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d15"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/current_item_info_text_des_width"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/kline_current_item_info_open"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+
+            <TextView
+                android:id="@+id/tv_open"
+                android:layout_width="@dimen/current_item_info_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/current_item_info_text_margin_left"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/current_item_info_text_des_width"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/kline_current_item_info_close"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+
+            <TextView
+                android:id="@+id/tv_close"
+                android:layout_width="@dimen/current_item_info_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/current_item_info_text_margin_left"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d15"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/current_item_info_text_des_width"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/kline_current_item_info_vol"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+
+            <TextView
+                android:id="@+id/tv_volume"
+                android:layout_width="@dimen/current_item_info_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/current_item_info_text_margin_left"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/current_item_info_text_des_width"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/kline_current_item_info_limit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+
+            <TextView
+                android:id="@+id/tv_limit"
+                android:layout_width="@dimen/current_item_info_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/current_item_info_text_margin_left"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/current_item_info_text_des_width"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/kline_current_item_info_ma5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+
+            <TextView
+                android:id="@+id/tv_ma5"
+                android:layout_width="@dimen/current_item_info_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/current_item_info_text_margin_left"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+        </LinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/current_item_info_text_des_width"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/kline_current_item_info_ma30"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+
+            <TextView
+                android:id="@+id/tv_ma30"
+                android:layout_width="@dimen/current_item_info_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/current_item_info_text_margin_left"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d15"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/current_item_info_text_des_width"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/kline_current_item_info_ma10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+
+            <TextView
+                android:id="@+id/tv_ma10"
+                android:layout_width="@dimen/current_item_info_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/current_item_info_text_margin_left"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/current_item_info_text_des_width"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/kline_current_item_info_ma60"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+
+            <TextView
+                android:id="@+id/tv_ma60"
+                android:layout_width="@dimen/current_item_info_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/current_item_info_text_margin_left"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/current_item_info_text_size" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

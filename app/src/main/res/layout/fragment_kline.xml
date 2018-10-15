@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/minute_black"
+    android:orientation="horizontal">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <cn.dagongniu.oax.kline.kchart.MyCombinedChartX
+            android:id="@+id/combinedchart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5" />
+
+        <cn.dagongniu.oax.kline.kchart.MyCombinedChartX
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:visibility="visible" />
+
+        <cn.dagongniu.oax.kline.kchart.MyCombinedChartX
+            android:id="@+id/macd_chart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:visibility="gone" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/right_item_container"
+        android:layout_width="@dimen/kline_fullscreen_bottom_right_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d30"
+        android:background="@color/kline_fullscreen_right_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/d30"
+        android:paddingTop="@dimen/d25"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_ma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/d10"
+            android:text="@string/kline_ma"
+            android:textColor="@color/kline_current_selected"
+            android:textSize="@dimen/d30" />
+
+        <TextView
+            android:id="@+id/tv_boll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/d10"
+            android:text="@string/kline_boll"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d30" />
+
+        <TextView
+            android:id="@+id/tv_vol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/kline_fullscreen_right_tv_margin"
+            android:gravity="center"
+            android:padding="@dimen/d10"
+            android:text="@string/kline_vol"
+            android:textColor="@color/kline_current_selected"
+            android:textSize="@dimen/d30" />
+
+        <TextView
+            android:id="@+id/tv_macd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/kline_fullscreen_right_tv_margin"
+            android:gravity="center"
+            android:padding="@dimen/d10"
+            android:text="@string/kline_macd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d30" />
+
+        <TextView
+            android:id="@+id/tv_kdj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/kline_fullscreen_right_tv_margin"
+            android:gravity="center"
+            android:padding="@dimen/d10"
+            android:text="@string/kline_kdj"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d30" />
+
+        <TextView
+            android:id="@+id/tv_rsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/kline_fullscreen_right_tv_margin"
+            android:gravity="center"
+            android:padding="@dimen/d10"
+            android:text="@string/kline_rsi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d30" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</LinearLayout>

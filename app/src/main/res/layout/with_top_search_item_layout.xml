@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d100">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_centerVertical="true"
+        android:text="--"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/d24"
+        android:textColor="@color/df_font"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/df_theme_bg_gray"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

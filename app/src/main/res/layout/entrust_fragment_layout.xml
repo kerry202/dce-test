@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_mian"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d80"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/d30"
+        android:paddingRight="@dimen/d30">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.90">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/entrust_order_time"
+                android:textColor="@color/df_font_hui"
+                android:textSize="@dimen/d24" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_ent_jyd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/entrust_order_jyd"
+                android:textColor="@color/df_font_hui"
+                android:textSize="@dimen/d24" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80">
+
+            <TextView
+                android:id="@+id/tv_ent_jg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/entrust_order_jg"
+                android:textColor="@color/df_font_hui"
+                android:textSize="@dimen/d24" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_ll_cz"
+                android:layout_width="@dimen/d100"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/entrust_order_cz"
+                android:textColor="@color/df_font_hui"
+                android:textSize="@dimen/d24" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:background="@color/df_F8F8F8"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_mian"
+        app:srlEnableFooterFollowWhenLoadFinished="true"
+        app:srlEnableScrollContentWhenLoaded="true">
+
+        <cn.dagongniu.oax.customview.ClassicsHeader
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlDrawableArrowSize="15dp"
+            app:srlDrawableMarginRight="15dp"
+            app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+            app:srlDrawableProgressSize="20dp"
+            app:srlEnableLastTime="true"
+            app:srlFinishDuration="500"
+            app:srlTextSizeTime="10sp"
+            app:srlTextSizeTitle="14sp"
+            app:srlTextTimeMarginTop="2dp" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ent_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/d10" />
+
+            <cn.dagongniu.oax.customview.XHLoadingView
+                android:id="@+id/lv_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/df_theme_bg_gray"
+                android:visibility="gone" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <cn.dagongniu.oax.customview.ClassicsFooter
+
+            android:id="@+id/classics_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="Translate"
+            app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+            app:srlDrawableProgressSize="20dp"
+            app:srlTextSizeTitle="14sp" />
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

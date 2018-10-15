@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.dagongniu.oax.customview.TradingFragmentToolbar
+            android:id="@+id/mytrading_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mytrading_toolbar"
+            android:layout_marginBottom="@dimen/d90"
+            android:focusableInTouchMode="true"
+            app:srlEnableAutoLoadMore="false"
+            app:srlEnableLoadMore="true"
+            app:srlEnableLoadMoreWhenContentNotFull="false">
+
+            <cn.dagongniu.oax.customview.ClassicsHeader
+                android:layout_width="match_parent"
+                android:background="@color/df_F8F8F8"
+                android:layout_height="wrap_content"
+                app:srlClassicsSpinnerStyle="FixedBehind"
+                app:srlDrawableArrowSize="15dp"
+                app:srlDrawableMarginRight="15dp"
+                app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+                app:srlDrawableProgressSize="20dp"
+                app:srlEnableLastTime="true"
+                app:srlFinishDuration="500"
+                app:srlTextSizeTime="10sp"
+                app:srlTextSizeTitle="14sp"
+                app:srlTextTimeMarginTop="2dp" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/d20">
+
+                    <include layout="@layout/head_committee" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/buy_recyclerview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/sell_recyclerview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/trading_content_al"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d80"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginRight="@dimen/d30"
+                        android:background="@drawable/border_trading_mian_screening">
+
+                        <TextView
+                            android:id="@+id/tv_trading_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d20"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="@dimen/d45" />
+
+
+                        <TextView
+                            android:id="@+id/tv_rmb_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d20"
+                            android:layout_toEndOf="@+id/tv_trading_price"
+                            android:layout_toRightOf="@+id/tv_trading_price"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="@dimen/d30" />
+
+
+                        <TextView
+                            android:id="@+id/tv_trading_limit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/d20"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="@dimen/d36" />
+
+                    </RelativeLayout>
+
+                    <com.flyco.tablayout.CommonTabLayout
+                        android:id="@+id/buy_and_sell_tab_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d70"
+                        android:background="@color/white"
+                        android:paddingLeft="@dimen/d100"
+                        android:paddingRight="@dimen/d100"
+                        app:tl_textsize="16sp" />
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/d10"
+                        android:paddingLeft="@dimen/d30"
+                        android:paddingTop="@dimen/d10">
+
+                        <EditText
+                            android:id="@+id/et_buy_sell_price"
+                            android:layout_width="@dimen/d500"
+                            android:layout_height="@dimen/d70"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/border_trading_line1_screening"
+                            android:hint="@string/price"
+                            android:inputType="numberDecimal|number"
+                            android:paddingLeft="@dimen/d30"
+                            android:textColor="@color/df_font"
+                            android:textColorHint="@color/df_font_hui"
+                            android:textSize="@dimen/d26" />
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d70"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:layout_marginRight="@dimen/d30"
+                            android:layout_toEndOf="@+id/et_buy_sell_price"
+                            android:layout_toRightOf="@+id/et_buy_sell_price">
+
+                            <ImageView
+                                android:id="@+id/iv_price_minus"
+                                android:layout_width="@dimen/d75"
+                                android:layout_height="@dimen/d70"
+                                android:background="@color/df_F6F6F6"
+                                android:padding="@dimen/d25"
+                                android:src="@drawable/jian_log" />
+
+                            <ImageView
+                                android:id="@+id/iv_price_add"
+                                android:layout_width="@dimen/d75"
+                                android:layout_height="@dimen/d70"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@color/df_F6F6F6"
+                                android:padding="@dimen/d25"
+                                android:src="@drawable/jia_log" />
+
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/d30">
+
+                        <EditText
+                            android:id="@+id/et_buy_sell_volume"
+                            android:layout_width="@dimen/d500"
+                            android:layout_height="@dimen/d70"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/border_trading_line1_screening"
+                            android:hint="@string/committee_amount"
+                            android:inputType="numberDecimal|number"
+                            android:paddingLeft="@dimen/d30"
+                            android:textColor="@color/df_font"
+                            android:textColorHint="@color/df_font_hui"
+                            android:textSize="@dimen/d26" />
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d70"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:layout_marginRight="@dimen/d30"
+                            android:layout_toEndOf="@+id/et_buy_sell_volume"
+                            android:layout_toRightOf="@+id/et_buy_sell_volume">
+
+                            <ImageView
+                                android:id="@+id/iv_volume_minus"
+                                android:layout_width="@dimen/d75"
+                                android:layout_height="@dimen/d70"
+                                android:background="@color/df_F6F6F6"
+                                android:padding="@dimen/d25"
+                                android:src="@drawable/jian_log" />
+
+                            <ImageView
+                                android:id="@+id/iv_volume_add"
+                                android:layout_width="@dimen/d75"
+                                android:layout_height="@dimen/d70"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@color/df_F6F6F6"
+                                android:padding="@dimen/d25"
+                                android:src="@drawable/jia_log" />
+
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginRight="@dimen/d30"
+                        android:layout_marginTop="@dimen/d10"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/d05"
+                        android:paddingTop="@dimen/d05">
+
+                        <RadioButton
+                            android:id="@+id/RadioButton25"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_state_order_screening"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:text="25%"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton50"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="@dimen/d20"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_state_order_screening"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:text="50%"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton75"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="@dimen/d20"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_state_order_screening"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:text="75%"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton100"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="@dimen/d20"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_state_order_screening"
+                            android:button="@null"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:text="100%"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/tv_total_prices"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d70"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginRight="@dimen/d30"
+                        android:layout_marginTop="@dimen/d10"
+                        android:background="@drawable/border_trading_line1_screening"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/d30"
+                        android:text="@string/total_price"
+                        android:textColor="@color/df_font"
+                        android:textColorHint="@color/df_font_hui"
+                        android:textSize="@dimen/d26" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/d10"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginRight="@dimen/d30"
+                        android:layout_marginTop="@dimen/d10">
+
+                        <TextView
+                            android:id="@+id/tv_sxfy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/trading_sxfy"
+                            android:textColor="@color/df_font"
+                            android:textSize="@dimen/d20" />
+
+                        <TextView
+                            android:id="@+id/tv_feeRate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:layout_toEndOf="@+id/tv_sxfy"
+                            android:layout_toRightOf="@+id/tv_sxfy"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="@dimen/d20" />
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true">
+
+                            <TextView
+                                android:id="@+id/tv_ky"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/trading_ky"
+                                android:textColor="@color/df_font"
+                                android:textSize="@dimen/d20" />
+
+                            <TextView
+                                android:id="@+id/tv_available"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="@dimen/d30"
+                                android:layout_toEndOf="@+id/tv_ky"
+                                android:layout_toRightOf="@+id/tv_ky"
+                                android:textColor="@color/df_gray_666"
+                                android:textSize="@dimen/d20" />
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                    </RelativeLayout>
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d90"
+            android:layout_alignParentBottom="true"
+            android:background="@color/df_F8F8F8">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/df_eeeeee" />
+
+            <Button
+                android:id="@+id/bt_trading_buy_sell"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d80"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:background="@color/button_bu"
+                android:text="@string/buy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d30" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/df_eeeeee" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

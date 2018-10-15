@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_title_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d40"
+                android:text="@string/red_oax_banner"
+                android:textColor="@color/df_999999"
+                android:textSize="@dimen/d24" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_surplusCoinQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d20"
+                android:text="0.00000000BTC"
+                android:textColor="@color/df_333333"
+                android:textSize="@dimen/d48" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_send_red"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d88"
+                android:layout_marginBottom="@dimen/d20"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d44"
+                android:background="@drawable/red_cancel_dialog_red_bg"
+                android:textSize="@dimen/d48">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/red_oax_next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d28" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d20"
+            android:background="@color/df_F8F8F8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_red_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d15"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_marginTop="@dimen/d15"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/red_oax_hint_show"
+            android:textColor="@color/df_gray_666"
+            android:textSize="@dimen/d26" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/df_F8F8F8" />
+
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

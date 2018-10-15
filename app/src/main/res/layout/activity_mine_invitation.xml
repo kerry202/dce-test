@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <cn.dagongniu.oax.customview.CommonToolbar
+        android:id="@+id/commontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.75"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d200">
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d125"
+                        android:layout_toLeftOf="@+id/split_line"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_register_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/df_FFB933"
+                            android:textSize="@dimen/d46" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d10"
+                            android:gravity="center"
+                            android:text="@string/register_count"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="@dimen/d24" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/split_line"
+                        android:layout_width="@dimen/d03"
+                        android:layout_height="@dimen/d83"
+                        android:layout_centerInParent="true"
+                        android:background="@color/df_line" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d125"
+                        android:layout_toRightOf="@+id/split_line"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_authenticated_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/df_FFB933"
+                            android:textSize="@dimen/d46" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d10"
+                            android:text="@string/authenticated_count"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="@dimen/d24" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d30"
+                android:background="@color/df_F8F8F8" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:text="@string/mine_promote_links"
+                    android:textColor="@color/df_080404"
+                    android:textSize="@dimen/d28" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_copy_links"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d70"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_copy_links"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/d42"
+                        android:background="@drawable/mine_copy_links_bg"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/d20"
+                        android:paddingRight="@dimen/d20"
+                        android:text="@string/mine_copy_links"
+                        android:textColor="@color/df_F5BE23"
+                        android:textSize="@dimen/d26" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_mine_links"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:background="@color/df_F8F8F8"
+                android:padding="@dimen/d15"
+                android:text=""
+                android:textColor="@color/df_080404"
+                android:textSize="@dimen/d30" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d40"
+                android:padding="@dimen/d15"
+                android:text="@string/mine_quick_mark"
+                android:textColor="@color/df_080404"
+                android:textSize="@dimen/d28" />
+
+            <ImageView
+                android:id="@+id/im_add"
+                android:layout_width="@dimen/d300"
+                android:layout_height="@dimen/d300"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d38"
+                android:background="@color/df_F8F8F8"
+                android:gravity="center"
+                android:scaleType="centerCrop" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_save_quick_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d70"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d68"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_save_quick_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d42"
+                    android:background="@drawable/mine_copy_links_bg"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/d20"
+                    android:paddingRight="@dimen/d20"
+                    android:text="@string/mine_save_quick_mark"
+                    android:textColor="@color/df_F5BE23"
+                    android:textSize="@dimen/d26" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

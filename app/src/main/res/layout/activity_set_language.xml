@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/df_F8F8F8"
+    android:orientation="vertical">
+
+    <cn.dagongniu.oax.customview.MyTradingToolbar
+        android:id="@+id/mytrading_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_simplified_chinese"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d90"
+        android:background="@color/white"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_simplified_chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d30"
+            android:text="@string/setting_simplified_chinese"
+            android:textColor="@color/df_font"
+            android:textSize="@dimen/d28" />
+
+        <ImageView
+            android:id="@+id/iv_simplified_chinese"
+            android:layout_width="@dimen/d44"
+            android:layout_height="@dimen/d44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/d30"
+            android:src="@drawable/language_select"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/d30"
+        android:background="@color/df_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_english"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d90"
+        android:background="@color/white"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d30"
+            android:text="@string/setting_language_english"
+            android:textColor="@color/df_font"
+            android:textSize="@dimen/d28" />
+
+        <ImageView
+            android:id="@+id/iv_english"
+            android:layout_width="@dimen/d44"
+            android:layout_height="@dimen/d44"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/language_select"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

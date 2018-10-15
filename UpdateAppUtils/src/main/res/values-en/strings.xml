@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="app_ignore">Cancel</string>
+    <string name="app_update">OK</string>
+    <string name="download_now">Downloading</string>
+    <string name="download_error">Error</string>
+    <string name="version_updating">Updating</string>
+    <string name="find_updating">New version found, OAX has updated to:</string>
+    <string name="whether_updating">version, please download the new version</string>
+    <string name="no_wifi">WiFi is disconnected, continue downloading?</string>
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/df_F8F8F8"
+    app:srlDragRate="0.75"
+    app:srlEnableLoadMore="true"
+    app:srlEnablePureScrollMode="true">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/df_F8F8F8">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_head_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d400"
+            android:background="@drawable/mine_head_bg">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/d106"
+                android:layout_height="@dimen/d106"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d100"
+                android:src="@drawable/mine_head_df" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_unlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/iv_head"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="@dimen/d120"
+                    android:layout_height="@dimen/d60"
+                    android:background="@drawable/mine_register_bg"
+                    android:gravity="center"
+                    android:text="@string/register"
+                    android:textColor="@color/df_F5BE23" />
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="@dimen/d120"
+                    android:layout_height="@dimen/d60"
+                    android:layout_marginLeft="@dimen/d132"
+                    android:background="@drawable/mine_login_bg"
+                    android:gravity="center"
+                    android:text="@string/login"
+                    android:textColor="@color/white" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/mine_login_user_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/iv_head"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d20"
+                    android:text="---"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d30" />
+
+                <TextView
+                    android:id="@+id/tv_user_uid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_user_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d02"
+                    android:text="UID:---"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d24" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_user_uid"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/d10"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_grade"
+                        android:layout_width="@dimen/d30"
+                        android:layout_height="@dimen/d28"
+                        android:src="@drawable/level_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:layout_marginRight="@dimen/d10"
+                        android:text="Lv -"
+                        android:textColor="@color/df_FFC900" />
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/rl_certification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:background="@drawable/border_focused_withd_mine_certification"
+                        android:paddingLeft="@dimen/d10"
+                        android:paddingRight="@dimen/d10">
+
+                        <TextView
+                            android:id="@+id/tv_authentication"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="@dimen/d02"
+                            android:layout_marginTop="@dimen/d02"
+                            android:text="@string/go_authenticate"
+                            android:textColor="@color/df_9B9B9B"
+                            android:textSize="@dimen/d22" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_security_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d70"
+            android:layout_below="@+id/rl_head_container"
+            android:background="@color/df_F8F8F8"
+            android:gravity="center"
+            android:text="@string/security_reminder"
+            android:textColor="@color/df_9B9B9B"
+            android:textSize="@dimen/d24" />
+
+        <LinearLayout
+            android:id="@+id/ll_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_security_reminder"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <cn.dagongniu.oax.account.view.MineFragmentItemView
+                android:id="@+id/mine_invitation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d86"
+                app:mine_is_show_split_line="false"
+                app:mine_item_des="@string/mine_invitation"
+                app:mine_item_icon="@drawable/mine_invitation" />
+
+            <cn.dagongniu.oax.account.view.MineFragmentItemView
+                android:id="@+id/mine_earnings"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d86"
+                android:visibility="gone"
+                app:mine_is_show_split_line="false"
+                app:mine_item_des="@string/mine_earnings"
+                app:mine_item_icon="@drawable/mine_earnings" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d30"
+                android:background="@color/df_F8F8F8" />
+
+            <cn.dagongniu.oax.account.view.MineFragmentItemView
+                android:id="@+id/mine_authentication"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d86"
+                app:mine_item_des="@string/mine_authentication"
+                app:mine_item_icon="@drawable/mine_authentication" />
+
+            <cn.dagongniu.oax.account.view.MineFragmentItemView
+                android:id="@+id/mine_security"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d86"
+                app:mine_item_des="@string/mine_security"
+                app:mine_item_icon="@drawable/mine_security" />
+
+            <cn.dagongniu.oax.account.view.MineFragmentItemView
+                android:id="@+id/mine_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d86"
+                app:mine_is_show_split_line="false"
+                app:mine_item_des="@string/mine_setting"
+                app:mine_item_icon="@drawable/mine_setting" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d30"
+                android:background="@color/df_F8F8F8" />
+
+            <cn.dagongniu.oax.account.view.MineFragmentItemView
+                android:id="@+id/mine_help"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d86"
+                app:mine_is_show_split_line="false"
+                app:mine_item_des="@string/mine_help"
+                app:mine_item_icon="@drawable/mine_help" />
+        </LinearLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

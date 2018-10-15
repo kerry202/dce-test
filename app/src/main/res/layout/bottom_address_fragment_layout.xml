@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+
+            android:layout_marginBottom="@dimen/d100"
+            android:layout_height="wrap_content">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/refreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                app:srlEnableAutoLoadMore="false"
+                app:srlEnableLoadMore="false"
+                app:srlEnableLoadMoreWhenContentNotFull="false">
+
+                <cn.dagongniu.oax.customview.ClassicsHeader
+                    android:background="@color/df_F8F8F8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srlClassicsSpinnerStyle="FixedBehind"
+                    app:srlDrawableArrowSize="15dp"
+                    app:srlDrawableMarginRight="15dp"
+                    app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+                    app:srlDrawableProgressSize="20dp"
+                    app:srlEnableLastTime="true"
+                    app:srlFinishDuration="500"
+                    app:srlTextSizeTime="10sp"
+                    app:srlTextSizeTitle="14sp"
+                    app:srlTextTimeMarginTop="2dp" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/add_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginTop="@dimen/d20" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d100"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/df_theme_bg_gray" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/im_add_log"
+                android:layout_width="@dimen/d40"
+                android:layout_height="@dimen/d40"
+                android:layout_centerVertical="true"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d20"
+                android:layout_toEndOf="@+id/im_add_log"
+                android:layout_toRightOf="@+id/im_add_log"
+                android:text="@string/assets_add"
+                android:textColor="@color/df_theme"
+                android:textSize="@dimen/d30" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_no_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/assets_no_add"
+        android:textColor="@color/df_999999"
+        android:textSize="@dimen/d30" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

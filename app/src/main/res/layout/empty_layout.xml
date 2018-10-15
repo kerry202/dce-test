@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/ivory"
+    android:layout_height="match_parent">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lin_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:src="@mipmap/state_empty"
+            android:id="@+id/iv_load"
+            android:layout_width="@dimen/d150"
+            android:layout_height="@dimen/d150"
+             />
+
+        <TextView
+            android:text="@string/no_data"
+            android:textSize="@dimen/d26"
+            android:textColor="@color/df_999999"
+            android:id="@+id/tv_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d24" />
+
+
+        <TextView
+            android:textSize="@dimen/d26"
+            android:textColor="@color/df_font_gray"
+            android:id="@+id/btn_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d20"
+            android:paddingLeft="@dimen/d20"
+            android:paddingRight="@dimen/d20"
+            android:text="@string/http_clickretry" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</FrameLayout>

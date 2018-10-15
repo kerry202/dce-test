@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.dagongniu.oax.customview.CommonToolbar
+        android:id="@+id/commontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.75"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/authenticate_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d44"
+                android:gravity="center"
+                android:padding="@dimen/d30"
+                android:text="@string/authenticate_title"
+                android:textColor="@color/df_font"
+                android:textSize="@dimen/d34" />
+
+            <cn.dagongniu.oax.customview.OaxTextView
+                android:id="@+id/authenticate_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/authenticate_title"
+                android:layout_marginBottom="@dimen/d30"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d40"
+                android:lineSpacingExtra="@dimen/d06"
+                android:paddingBottom="@dimen/d30"
+                android:text="@string/authenticate_des"
+                android:textColor="@color/df_gray_666"
+                android:textSize="@dimen/d26" />
+
+
+            <TextView
+                android:id="@+id/start_authenticate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d90"
+                android:layout_below="@+id/authenticate_des"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d50"
+                android:background="@drawable/mine_login_bg"
+                android:gravity="center"
+                android:text="@string/start_authenticate"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d28" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</com.zhy.autolayout.AutoLinearLayout>

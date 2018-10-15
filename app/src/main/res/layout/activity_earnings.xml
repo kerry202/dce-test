@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.dagongniu.oax.account.view.EarningToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/magicindicator"
+        android:layout_marginRight="@dimen/d70"
+        android:layout_marginLeft="@dimen/d70"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d70" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.zhy.autolayout.AutoLinearLayout>

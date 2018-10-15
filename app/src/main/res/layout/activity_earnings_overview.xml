@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.dagongniu.oax.customview.CommonToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_mian"
+        android:background="@color/df_F8F8F8"
+        android:focusableInTouchMode="true"
+        app:srlEnableAutoLoadMore="false"
+        app:srlEnableLoadMore="true"
+        app:srlEnableLoadMoreWhenContentNotFull="false">
+
+        <cn.dagongniu.oax.customview.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlDrawableArrowSize="15dp"
+            app:srlDrawableMarginRight="15dp"
+            app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+            app:srlDrawableProgressSize="20dp"
+            app:srlEnableLastTime="true"
+            app:srlFinishDuration="500"
+            app:srlTextSizeTime="10sp"
+            app:srlTextSizeTitle="14sp"
+            app:srlTextTimeMarginTop="2dp" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/df_F8F8F8">
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recyclerview"-->
+            <!--android:layout_marginLeft="@dimen/d40"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d40"
+                    android:layout_marginRight="@dimen/d40"
+                    android:layout_marginTop="@dimen/d30"
+                    android:orientation="horizontal">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_total_des"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d30"
+                            android:gravity="center"
+                            android:text="@string/x_token_total"
+                            android:textColor="@color/df_font"
+                            android:textSize="@dimen/d24" />
+
+                        <cn.dagongniu.oax.customview.ShadowTextView
+                            android:id="@+id/tv_total_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d60"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/d30"
+                            android:layout_marginTop="@dimen/d15"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/d15"
+                            android:paddingRight="@dimen/d15"
+                            android:textColor="@color/df_font" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_circulation_market_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d40"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_circulation_market_value_des"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d30"
+                            android:gravity="center"
+                            android:text="@string/x_token_circulation_market_value"
+                            android:textColor="@color/df_font"
+                            android:textSize="@dimen/d24" />
+
+                        <cn.dagongniu.oax.customview.ShadowTextView
+                            android:id="@+id/tv_circulation_market_value_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d60"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/d30"
+                            android:layout_marginTop="@dimen/d15"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/d15"
+                            android:paddingRight="@dimen/d15"
+                            android:textColor="@color/df_font" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d40"
+                    android:layout_marginRight="@dimen/d40"
+                    android:layout_marginTop="@dimen/d30"
+                    android:orientation="horizontal">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_total_market_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_total_market_value_des"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d30"
+                            android:gravity="center"
+                            android:text="@string/x_token_total_market_value"
+                            android:textColor="@color/df_font"
+                            android:textSize="@dimen/d24" />
+
+                        <cn.dagongniu.oax.customview.ShadowTextView
+                            android:id="@+id/tv_total_market_value_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d60"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/d30"
+                            android:layout_marginTop="@dimen/d15"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/d15"
+                            android:paddingRight="@dimen/d15"
+                            android:textColor="@color/df_font" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_circulation_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d40"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_circulation_total_des"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d30"
+                            android:gravity="center"
+                            android:text="@string/x_token_circulation_total"
+                            android:textColor="@color/df_font"
+                            android:textSize="@dimen/d24" />
+
+                        <cn.dagongniu.oax.customview.ShadowTextView
+                            android:id="@+id/tv_circulation_total_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d60"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/d30"
+                            android:layout_marginTop="@dimen/d15"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/d15"
+                            android:paddingRight="@dimen/d15"
+                            android:textColor="@color/df_font" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <cn.dagongniu.oax.customview.XHLoadingView
+                android:id="@+id/lv_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/df_theme_bg_gray"
+                android:visibility="gone" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

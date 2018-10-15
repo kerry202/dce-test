@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="CustomIndicator">
+        <attr name="count" format="integer" />
+        <attr name="width" format="dimension" />
+        <attr name="height" format="dimension" />
+        <attr name="margin" format="dimension" />
+        <attr name="normal_icon" format="reference" />
+        <attr name="selected_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MyToolbar">
+        <attr name="hideLeft" format="boolean" />
+        <attr name="titleText" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="hideRight" format="boolean" />
+        <attr name="rightImg" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="QuickTabLayout">
+        <attr name="tabHeight" format="dimension" />
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="indicatorWidth" format="dimension" />
+        <attr name="tabWidth" format="dimension" />
+        <attr name="txtSelectedColor" format="color" />
+        <attr name="txtUnselectedColor" format="color" />
+        <attr name="indicatorColor" format="color" />
+        <attr name="txtSize" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ShadowLayout">
+        <attr name="sl_cornerRadius" format="dimension" />
+        <attr name="sl_shadowRadius" format="dimension" />
+        <attr name="sl_shadowColor" format="color" />
+        <attr name="sl_dx" format="dimension" />
+        <attr name="sl_dy" format="dimension" />
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CurrentItemInfoView">
+        <attr name="isFromFullScreen" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MineFragmentItemView">
+        <attr name="mine_item_icon" format="reference" />
+        <attr name="mine_item_des" format="string" />
+        <attr name="mine_is_show_split_line" format="boolean" />
+    </declare-styleable>
+
+    <!--<declare-styleable name="OAXToolbar">-->
+    <!--<attr name="oax_toolbar_left_icon" format="reference" />-->
+    <!--<attr name="oax_toolbar_right_icon" format="reference" />-->
+    <!---->
+    <!--<attr name="oax_toolbar_left_des" format="string" />-->
+    <!--<attr name="oax_toolbar_right_des" format="string" />-->
+    <!--<attr name="oax_toolbar_center_des" format="string" />-->
+    <!---->
+    <!--<attr name="oax_toolbar_is_show_right_icon" format="boolean" />-->
+    <!--<attr name="oax_toolbar_is_show_left_icon" format="boolean" />-->
+    <!--<attr name="oax_toolbar_is_show_left_des" format="boolean" />-->
+    <!--<attr name="oax_toolbar_is_show_right_des" format="boolean" />-->
+    <!--<attr name="oax_toolbar_is_show_center_des" format="boolean" />-->
+
+    <!--<attr name="oax_toolbar_left_text_size" format="dimension" />-->
+    <!--<attr name="oax_toolbar_right_text_size" format="dimension" />-->
+    <!--<attr name="oax_toolbar_right_center_size" format="dimension" />-->
+    <!---->
+    <!---->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="KLineTabView">
+        <attr name="kline_tab_name" format="string" />
+        <attr name="kline_tab_select" format="boolean" />
+        <attr name="kline_tab_select_color" format="color" />
+        <attr name="kline_tab_un_select_color" format="color" />
+    </declare-styleable>
+
+
+</resources>

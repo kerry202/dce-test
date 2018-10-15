@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d120">
+
+    <TextView
+        android:id="@+id/tv_coin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d30"
+        android:text="@string/no_data"
+        android:textColor="@color/df_font"
+        android:textSize="@dimen/d26" />
+
+    <View
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/df_line"
+        android:layout_alignParentBottom="true"
+        />
+</com.zhy.autolayout.AutoRelativeLayout>

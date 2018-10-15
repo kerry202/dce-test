@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="app_ignore">取消</string>
+    <string name="app_update">确认</string>
+    <string name="download_now">正在下载</string>
+    <string name="download_error">下载出错</string>
+    <string name="version_updating">版本更新</string>
+    <string name="find_updating">发现新版本，大公牛已更新到</string>
+    <string name="whether_updating">版本，快快下载体验新版本吧！</string>
+    <string name="no_wifi">目前手机不是WiFi状态\n确认是否继续下载更新？</string>
+</resources>

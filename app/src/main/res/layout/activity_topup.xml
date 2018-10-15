@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".assets.TopupActivity">
+
+    <cn.dagongniu.oax.customview.MyTradingToolbar
+        android:id="@+id/topup_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.75"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/d30"
+                android:paddingRight="@dimen/d30">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d50">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="---"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d30" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_copy_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/mine_copy_links_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d20"
+                            android:layout_marginRight="@dimen/d20"
+                            android:text="@string/assets_coyp"
+                            android:textColor="@color/df_theme"
+                            android:textSize="@dimen/d26" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d120"
+                    android:layout_marginTop="@dimen/d40"
+                    android:background="@color/df_F8F8F8">
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginRight="@dimen/d30"
+                        android:text=""
+                        android:textColor="@color/df_font"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/d30" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d30">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_copy_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/mine_copy_links_bg">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/d20"
+                                android:layout_marginRight="@dimen/d20"
+                                android:text="@string/assets_coyp_label"
+                                android:textColor="@color/df_theme"
+                                android:textSize="@dimen/d26" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d120"
+                        android:layout_marginTop="@dimen/d30"
+                        android:background="@color/df_theme_bg_gray">
+
+                        <TextView
+                            android:id="@+id/tv_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:layout_marginRight="@dimen/d30"
+                            android:background="@color/df_theme_bg_gray"
+                            android:text=""
+                            android:textColor="@color/df_font"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/d30" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d80"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/im_code"
+                            android:layout_width="@dimen/d300"
+                            android:layout_height="@dimen/d300"
+                            android:background="@color/df_F8F8F8"
+                            android:scaleType="centerCrop" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/d50"
+                        android:layout_marginTop="@dimen/d80"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_save_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/mine_copy_links_bg">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/d20"
+                                android:layout_marginRight="@dimen/d20"
+                                android:text="@string/assets_coyp_code"
+                                android:textColor="@color/df_theme"
+                                android:textSize="@dimen/d26" />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

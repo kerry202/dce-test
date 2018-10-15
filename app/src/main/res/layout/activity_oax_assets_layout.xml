@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.dagongniu.oax.customview.MyTradingToolbar
+            android:id="@+id/assets_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/df_F8F8F8"
+            app:srlEnableAutoLoadMore="false"
+            app:srlEnableLoadMore="true"
+            app:srlEnableLoadMoreWhenContentNotFull="false">
+
+            <cn.dagongniu.oax.customview.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srlClassicsSpinnerStyle="FixedBehind"
+                app:srlDrawableArrowSize="15dp"
+                app:srlDrawableMarginRight="15dp"
+                app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+                app:srlDrawableProgressSize="20dp"
+                app:srlEnableLastTime="true"
+                app:srlFinishDuration="500"
+                app:srlTextSizeTime="10sp"
+                app:srlTextSizeTitle="14sp"
+                app:srlTextTimeMarginTop="2dp" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/d30"
+                    android:paddingLeft="@dimen/d30"
+                    android:paddingRight="@dimen/d30"
+                    android:paddingTop="@dimen/d50">
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rl_btc"
+                            android:layout_centerHorizontal="true">
+
+                            <TextView
+                                android:gravity="center"
+                                android:id="@+id/tv_assets_btc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="0.00000000BTC"
+                                android:textColor="@color/df_F5BE23"
+                                android:textSize="@dimen/d46" />
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:id="@+id/im_open_eyes"
+                            android:layout_width="@dimen/d65"
+                            android:layout_height="@dimen/d50"
+                            android:layout_toEndOf="@+id/rl_btc"
+                            android:padding="@dimen/d14"
+                            android:src="@drawable/assets_no"
+                            android:layout_toRightOf="@+id/rl_btc" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_assets_eth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/d10"
+                            android:text="≈0.000000ETH"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="@dimen/d30" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_assets_cny"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/d10"
+                            android:text="≈¥0.00"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="@dimen/d30" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/d20"
+                        android:paddingBottom="@dimen/d20"
+                        android:paddingLeft="@dimen/d30"
+                        android:paddingRight="@dimen/d30">
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:id="@+id/rl_withdrawal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d65"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/rl_topup"
+                            android:layout_toRightOf="@+id/rl_topup"
+                            android:layout_weight="1"
+                            android:background="@drawable/withdrawal_cancel_dialog_orange_bg"
+                            android:gravity="center">
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/d10"
+                                android:layout_marginRight="@dimen/d10">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toEndOf="@+id/im_topup"
+                                    android:layout_toRightOf="@+id/im_topup"
+                                    android:text="@string/assets_withdrawal"
+                                    android:textColor="@color/df_F5BE23"
+                                    android:textSize="@dimen/d26" />
+
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                        <View
+                            android:layout_width="@dimen/d15"
+                            android:layout_height="match_parent"/>
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:id="@+id/rl_topup"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d65"
+                            android:layout_weight="1"
+                            android:background="@drawable/top_up_cancel_dialog_orange_bg"
+                            android:gravity="center">
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/d10"
+                                android:layout_marginRight="@dimen/d10">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toEndOf="@+id/im_withdrawal"
+                                    android:layout_toRightOf="@+id/im_withdrawal"
+                                    android:text="@string/assets_topup"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/d26" />
+
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                        <View
+                            android:id="@+id/v_left_red"
+                            android:layout_width="@dimen/d15"
+                            android:layout_height="match_parent"/>
+
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:id="@+id/rl_red"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d65"
+                            android:layout_weight="1"
+                            android:background="@drawable/red_cancel_dialog_red_bg"
+                            android:gravity="center">
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/d10"
+                                android:layout_marginRight="@dimen/d10">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toEndOf="@+id/im_withdrawal"
+                                    android:layout_toRightOf="@+id/im_withdrawal"
+                                    android:text="@string/fa_red"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/d26" />
+
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d30"
+                    android:background="@color/df_F6F6F6" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d70">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:text="@string/assets_my"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d22" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/df_eeeeee" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d60"
+                    android:paddingLeft="@dimen/d30"
+                    android:paddingRight="@dimen/d30">
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/assets_bz"
+                            android:textColor="@color/df_999999"
+                            android:textSize="@dimen/d24" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/d20"
+                            android:text="@string/assets_ky_count"
+                            android:textColor="@color/df_999999"
+                            android:textSize="@dimen/d24" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:text="@string/assets_dj_count"
+                            android:textColor="@color/df_999999"
+                            android:textSize="@dimen/d24" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/assets_sum"
+                            android:textColor="@color/df_999999"
+                            android:textSize="@dimen/d26" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/df_eeeeee" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/assets_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/df_F8F8F8" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/rl_no_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/iv_load"
+                            android:layout_width="@dimen/d150"
+                            android:layout_height="@dimen/d150"
+                            android:src="@mipmap/state_empty" />
+
+                        <TextView
+                            android:id="@+id/tv_load"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/d24"
+                            android:text="@string/no_data"
+                            android:textColor="@color/df_999999"
+                            android:textSize="@dimen/d26" />
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

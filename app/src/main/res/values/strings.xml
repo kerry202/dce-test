@@ -1,0 +1,605 @@
+<resources>
+    <string name="app_name">DCE</string>
+
+    <string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="bind_phone_email_seuccss">绑定号码邮箱成功</string>
+    <string name="bind_google_seuccss">绑定Google成功</string>
+    <!--  登陆注册-->
+    <string name="login_success">登录成功</string>
+    <string name="esc_login_success">退出登录</string>
+    <string name="user_identity_authen_success">上传资料成功</string>
+    <string name="registered_choosecountries">选择国家和地区</string>
+    <string name="login_email">邮箱登录</string>
+    <string name="login_phone">手机号登录</string>
+    <string name="login_email_hint">请输入邮箱</string>
+    <string name="login_phone_hint">请输入手机号码</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="login_login">登录</string>
+    <string name="login_forget_pwd">忘记密码?</string>
+    <string name="registered">注册</string>
+    <string name="use_login_email_hint">使用邮箱登录</string>
+    <string name="use_login_phone_hint">使用手机号登录</string>
+    <string name="login_phone_thereare">手机号码已注册</string>
+    <string name="login_phone_to_login">该手机号码已注册，请直接登录</string>
+    <string name="to_login">去登录</string>
+    <string name="login_show_errer">邮箱或密码错误，您还有3次尝试机会</string>
+
+    <string name="login_show_errer_phone">手机或密码错误，您还有3次尝试机会</string>
+
+    <string name="lregistered_reading">请阅读并同意DCE用户协议</string>
+    <string name="registered_phone_errer">号码格式不正确</string>
+    <string name="registered_pasd_errer">密码格式不正确,请输入 6-16位数字加英文</string>
+    <string name="registered_eamil_errer">邮箱格式不正确</string>
+    <string name="registered_phone">手机号注册</string>
+    <string name="registered_email">邮箱注册</string>
+    <string name="registered_hint_code">请输入验证码</string>
+    <string name="registered_get_code">获取验证码</string>
+    <string name="registered_oax_xy">我同意DCE的</string>
+    <string name="registered_oax_agreement">用户协议</string>
+    <string name="registered_next">下一步</string>
+    <string name="registered_go_login">已有账号？ 去登录</string>
+    <string name="use_registered_phone_hint">使用手机号注册</string>
+    <string name="use_registered_email_hint">使用邮箱注册</string>
+    <string name="registered_cx_get_cede">重新获取</string>
+    <string name="registered_code_errer">验证码错误</string>
+
+
+    <string name="registered_success_to_login">注册成功，请登录</string>
+    <string name="update_passwrod_success_to_login">密码修改成功，请登录</string>
+
+    <string name="show_hint_email_thereisno">邮箱账户不存在</string>
+    <string name="show_hint_phone_thereisno">手机账户不存在</string>
+
+    <string name="forgot_phone_title">通过手机找回密码</string>
+    <string name="forgot_email_title">通过邮箱找回密码</string>
+
+    <string name="setpwd_eamil_title">通过邮箱找回密码</string>
+    <string name="setpwd_phone_title">通过手机找回密码</string>
+    <string name="setpwd_the_title">设置密码</string>
+
+    <string name="setpwd_lin_hint">设置密码，6 - 16位数字加英文</string>
+    <string name="old_setpwd_lin_hint">请输入旧密码</string>
+    <string name="repeat_setpwd_lin_hint">重复密码，6 - 16位数字加英文</string>
+    <string name="setpwd_lin_hint_yes">确认密码</string>
+    <string name="setpwd_commit">提交</string>
+
+    <string name="update_login_success">重置密码成功,请重新登录</string>
+    <string name="forgot_email_show">通过邮箱找回密码</string>
+    <string name="forgot_phone_show">通过手机找回密码</string>
+    <string name="forgot_phone_registered">注册手机号</string>
+    <string name="forgot_input_phone"> 请输入手机号码</string>
+    <string name="forgot_eamil_registered">注册邮箱</string>
+    <string name="forgot_input_eamil">请输入邮箱</string>
+
+    <!-- dialog -->
+    <string name="dialog_validation">安全验证</string>
+    <string name="dialog_email">邮箱:</string>
+    <string name="dialog_get_code">获取验证码</string>
+    <string name="dialog_phone">手机号码:</string>
+    <string name="dialog_google">谷歌验证码</string>
+    <string name="dialog_commit">提交</string>
+
+    <!-- 资产 -->
+    <string name="address_error">地址格式错误</string>
+    <string name="assets_get_sum">持有总量</string>
+    <string name="assets_ky_sum">可用总量</string>
+    <string name="assets_freeze_money">冻结金额</string>
+    <string name="assets_btc">CNY估值</string>
+    <string name="assets_market">市场</string>
+    <string name="add_withdrawal_adderss_success">新增地址成功</string>
+    <string name="assets">资产</string>
+    <string name="mine">我的</string>
+    <string name="assets_record">历史记录</string>
+    <string name="assets_withdrawal">提现</string>
+    <string name="assets_topup">充值</string>
+    <string name="assets_my">我的资产</string>
+    <string name="assets_bz">币种</string>
+    <string name="assets_ky_count">可用数量</string>
+    <string name="assets_dj_count">冻结数量</string>
+    <string name="assets_sum">总计</string>
+    <string name="assets_state">状态</string>
+    <string name="assets_sum_e">总额</string>
+    <string name="assets_kyzc">可用资产</string>
+    <string name="assets_txje">提现金额</string>
+    <string name="assets_all_tx">全部</string>
+    <string name="assets_sxfy">手续费用:</string>
+    <string name="assets_sjdz">实际到账:</string>
+    <string name="assets_tbdz">提币地址</string>
+    <string name="assets_wxts">温馨提示： 请务必填写地址Tag</string>
+    <string name="assets_add">添加地址</string>
+    <string name="assets_no_add">暂无地址</string>
+    <string name="assets_address">地址</string>
+    <string name="assets_note">备注</string>
+    <string name="assets_yes_add">确认添加</string>
+    <string name="assets_add_address">新增地址</string>
+    <string name="assets_withdrawal_successful">提现成功</string>
+    <string name="assets_coyp">复制地址</string>
+    <string name="click_coyp">点击复制</string>
+    <string name="assets_coyp_label">复制标签</string>
+    <string name="assets_coyp_code">保存二维码</string>
+    <string name="assets_add_tag">地址标签Tag</string>
+    <string name="assets_icon_count">输入提币数量</string>
+    <!--<string name="assets_icon_count">可提额度：50.00000000 - 1000.00000000</string>-->
+    <string name="add_adderss">输入地址</string>
+    <string name="add_note">输入备注</string>
+
+
+    <string name="assets_min_max">该类币种起提%1$s,最大提现%2$s</string>
+
+    <string name="assets_keti_edu">您今日剩余可提现额度为%1$sBTC</string>
+    <array name="assets_record">
+        <item>充值记录</item>
+        <item>提现记录</item>
+    </array>
+
+    <string name="assets_min_show_hint">最小可提数量：%1$s</string>
+    <string name="assets_max_show_hint">最大可提数量：%1$s</string>
+    <string name="assets_today_show_hint">今日可提数量：%1$s BTC</string>
+
+    <!--委托订单-->
+    <string name="entrust_order">委托/订单</string>
+    <string name="entrust">委托</string>
+    <string name="order">订单</string>
+    <string name="entrust_order_time">时间</string>
+    <string name="entrust_order_jyd">交易对</string>
+    <string name="entrust_order_jg">价格</string>
+    <string name="entrust_order_count">数量</string>
+    <string name="entrust_order_cz">操作</string>
+    <string name="entrust_order_undo">撤单</string>
+    <string name="entrust_order_lx">类型</string>
+
+    <string name="entrust_order_ddsx">订单筛选</string>
+    <string name="entrust_order_date">日期</string>
+    <string name="entrust_order_market">市场</string>
+    <string name="entrust_order_t">1天</string>
+    <string name="entrust_order_z">1周</string>
+    <string name="entrust_order_y">1月</string>
+    <string name="entrust_order_3y">3月</string>
+    <string name="entrust_order_all">全部</string>
+    <string name="entrust_order_bz">币种</string>
+    <string name="entrust_order_buy_sell">买/卖</string>
+    <string name="entrust_order_buy">买入</string>
+    <string name="entrust_order_sell">卖出</string>
+    <string name="entrust_order_ycycx">隐藏已撤销</string>
+    <string name="entrust_order_ok">完成</string>
+    <string name="entrust_order_reset">重置</string>
+
+
+    <array name="entrustnadorder">
+        <item>委托</item>
+        <item>订单</item>
+    </array>
+
+
+    <!--市场-->
+    <string name="market">市场</string>
+
+    <!-- 注册 -->
+    <string name="reg_phone">手机注册</string>
+    <string name="reg_emil">邮箱注册</string>
+    <string name="reg_phone_emil_hint">请输入手机号码或邮箱</string>
+    <string name="reg_code_hint">请输入验证码</string>
+    <string name="reg_get_code">获取验证码</string>
+    <string name="reg_set_pwd">请设置登陆密码</string>
+    <string name="reg_yes_pwd">请确定登陆密码</string>
+    <string name="reg_yjzhs">已有账户</string>
+    <string name="reg_login">请登录</string>
+    <string name="deal_setpwd">请设置交易密码</string>
+    <string name="deal_yespwd">请确定交易密码</string>
+    <!-- 公共 -->
+    <string name="next">下一步</string>
+
+    <!--首页-->
+    <string name="announcement_content_no_id">未找到公告ID，请重试</string>
+    <string name="home_recommendmarketlist_success">登录成功</string>
+    <string name="home">首页</string>
+    <string name="home_bz">币种</string>
+    <string name="home_jg_btc">价格</string>
+    <string name="home_price">价格</string>
+    <string name="home_jg_eth">价格</string>
+    <string name="home_optional">自选</string>
+    <string name="home_zdf">涨跌幅</string>
+    <string name="home_qty">额:</string>
+    <string name="home_hint_search">输入交易对关键词</string>
+
+    <!--交易-->
+    <string name="trding_k_line">K线图</string>
+    <string name="trding_buy">买</string>
+    <string name="trding_sell">卖</string>
+    <string name="fall_jiage">价格</string>
+    <string name="fall_count">数量</string>
+    <string name="trading">交易</string>
+    <string name="buy">买入</string>
+    <string name="sell">卖出</string>
+    <string name="trading_sum">总额</string>
+    <string name="trading_sxfy">手续费</string>
+    <string name="trading_ky">可用</string>
+
+
+    <!--请求状态-->
+    <string name="refresh_ok">刷新成功</string>
+    <string name="load_ok">加载成功</string>
+    <string name="load_error">请求错误</string>
+
+    <!--公告-->
+    <string name="announcement">公告</string>
+    <string name="announcement_more">查看更多</string>
+    <string name="announcement_close">返回</string>
+    <string name="announcement_tz">公告通知</string>
+    <string name="announcement_fbr">发布人:</string>
+
+    <!--其他-->
+    <string name="notice_1">关于五月份上线交易平台的公告</string>
+    <string name="notice_2">至于活动什么的肯定都是放这里的</string>
+    <string name="notice_3">至于活动什么的肯定都是放这里的至于活动什么的肯定都是放这里的至于活动什么的</string>
+    <string name="jia">十</string>
+    <string name="jian">一</string>
+    <string name="hint">提示hint</string>
+
+    <!--国际化-->
+    <string name="setting_language_title">多语言设置</string>
+    <string name="setting_language_auto">自动</string>
+    <string name="setting_language_english">English</string>
+    <string name="setting_simplified_chinese">简体中文</string>
+
+    <!--刷新加载-->
+    <string name="srl_header_pulling">下拉可以刷新</string>
+    <string name="srl_header_refreshing">正在刷新…</string>
+    <string name="srl_header_loading">正在加载…</string>
+    <string name="srl_header_release">释放立即刷新</string>
+    <string name="srl_header_finish">刷新完成</string>
+    <string name="srl_header_failed">刷新失败</string>
+    <string name="srl_header_update">上次更新 M-d HH:mm</string>
+    <string name="srl_header_secondary">释放进入二楼</string>
+
+    <string name="srl_footer_pulling">上拉加载更多</string>
+    <string name="srl_footer_release">释放立即加载</string>
+    <string name="srl_footer_loading">正在加载…</string>
+    <string name="srl_footer_refreshing">正在刷新…</string>
+    <string name="srl_footer_finish">加载完成</string>
+    <string name="srl_footer_failed">加载失败</string>
+    <string name="srl_footer_nothing">没有更多数据了</string>
+    <string name="undefined_type">未定义类型</string>
+
+
+    <string name="withdrawal_failed">失败</string>
+    <!--VPN-->
+    <string name="menu_item_switch">代理</string>
+    <string name="menu_item_toggle_global">开/关全局模式</string>
+    <string name="menu_item_about">关于</string>
+    <string name="menu_item_exit">退出</string>
+    <string name="config_url">配置地址</string>
+    <string name="config_not_set_value">未设置</string>
+    <string name="config_url_scan">扫描二维码</string>
+    <string name="config_url_manual">手动输入</string>
+    <string name="config_url_scan_hint">扫描配置地址的二维码</string>
+    <string name="select_app">选择使用代理的软件</string>
+    <string name="select_app_detail">未选择</string>
+    <string name="proxied_apps">使用代理的软件</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_more">更多&#8230;</string>
+    <string name="vpn_connected_status">已连接</string>
+    <string name="vpn_disconnected_status">已断开</string>
+    <string name="about_info">Shadowsocks android 由dawei开发维护,可以在任意Android 4.0+上使用，无需ROOT权限。它是基于SmartProxy与Shadowsocks-Java改装。</string>
+    <string name="exit_confirm_info">这将会断开VPN连接，确定要退出吗？</string>
+    <string name="err_invalid_url">无效的配置地址</string>
+    <string name="config_url_hint">ss://method:password@host:port</string>
+
+    <!-- K线 -->
+    <string name="open_price">开盘价</string>
+    <string name="close_price">收盘价</string>
+    <string name="high_price">最高价</string>
+    <string name="low_price">最低价</string>
+    <string name="price">价格</string>
+    <string name="change_rate">涨跌幅</string>
+    <string name="volume">成交量</string>
+
+
+    <string name="kline_minute">分时</string>
+    <string name="kline_fifteen_minutes">15分</string>
+    <string name="kline_minutes">分钟</string>
+    <string name="hour">小时</string>
+    <string name="kline_one_hour">1小时</string>
+    <string name="kline_four_hour">4小时</string>
+    <string name="kline_eight_hour">8小时</string>
+    <string name="kline_one_day">1天</string>
+    <string name="kline_seven_day">7天</string>
+    <string name="kline_daily_line">日线</string>
+    <string name="kline_weekly_line">周线</string>
+    <string name="kline_month_line">月</string>
+    <string name="tv_more">更多</string>
+    <string name="kline_one_min">1分钟</string>
+    <string name="kline_five_min">5分钟</string>
+    <string name="kline_ten_min">10分钟</string>
+    <string name="kline_fifteen_min">15分钟</string>
+    <string name="kline_thirty_min">30分钟</string>
+
+    <string name="kline_buy">买</string>
+    <string name="kline_sell">卖</string>
+    <string name="kline_price">价格</string>
+    <string name="committee_amount">数量</string>
+    <string name="unit_price">单价</string>
+    <string name="kline_time">时间</string>
+    <string name="kline_trading_volume">成交量</string>
+    <string name="kline_boll">BOLL</string>
+    <string name="kline_vol">VOL</string>
+    <string name="kline_macd">MACD</string>
+    <string name="kline_kdj">KDJ</string>
+    <string name="kline_rsi">RSI</string>
+    <string name="kline_transaction">实时成交</string>
+    <string name="kline_current_item_info_high">最高</string>
+    <string name="kline_current_item_info_low">最低</string>
+    <string name="kline_current_item_info_open">开盘</string>
+    <string name="kline_current_item_info_close">收盘</string>
+    <string name="kline_current_item_info_vol">成交量</string>
+    <string name="kline_current_item_info_limit">涨跌幅</string>
+    <string name="kline_current_item_info_ma5">MA5</string>
+    <string name="kline_current_item_info_ma10">MA10</string>
+    <string name="kline_current_item_info_ma30">MA30</string>
+    <string name="kline_current_item_info_ma60">MA60</string>
+
+
+    <!-- 我的 -->
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="authenticated">已认证</string>
+    <string name="go_authenticate">去认证</string>
+    <string name="security_reminder">请不要透露密码、短信和邮箱验证码等认证信息给任何人。</string>
+    <string name="mine_invitation">我的邀请</string>
+    <string name="mine_earnings">平台收益</string>
+    <string name="mine_authentication">实名认证</string>
+    <string name="mine_security">安全中心</string>
+    <string name="mine_setting">设置</string>
+    <string name="mine_help">帮助中心</string>
+    <string name="register_count">已注册人数</string>
+    <string name="authenticated_count">已认证人数</string>
+    <string name="mine_promote_links">我的推广链接</string>
+    <string name="mine_copy_links">复制链接</string>
+    <string name="mine_quick_mark">我的推广二维码</string>
+    <string name="mine_save_quick_mark">保存二维码</string>
+    <string name="start_authenticate">开始认证</string>
+    <string name="identity_authentication">身份认证</string>
+    <string name="authenticate_title">关于五月份上线交易平台的公告</string>
+    <string name="authenticate_des">\u3000\u3000实名制符合反洗钱标准，新的实名系统将阻止非法洗钱资金，并将虚拟货币的未成年用户自动过滤掉，而且银行有反洗钱义务，这将要求他们检查和保留加密货币交易者的交易记录。\n\u3000\u3000在实名认证的系统下，一些无合法经营执照、无实名认证、无银行共识认可的交易所，生存空间将荡然无存。当然，很多交易平台已经意识到了这个趋势，并早已实施了实名认证机制。比如说idcm.io，注册过程中，必须要用户提供有效的姓名、身份证或者护照等有效证件，而且还要对这些证件的有效期进行审核，以确保平台交易行为的合规合法。\n\u3000\u3000实名制符合反洗钱标准，新的实名系统将阻止非法洗钱资金，并将虚拟货币的未成年用户自动过滤掉，而且银行有反洗钱义务，这将要求他们检查和保留加密货币交易者的交易记录。</string>
+    <string name="nationality">国籍</string>
+    <string name="real_name">真实姓名</string>
+    <string name="china">中国(China)</string>
+    <string name="certificate_type">证件类型</string>
+    <string name="select_certificate_type">请选择证件类型</string>
+    <string name="certificate_number">证件号码</string>
+    <string name="input_certificate_number">请输入证件号码</string>
+    <string name="Identity_Recognition">身份识别</string>
+    <string name="full_face_photo">正面照</string>
+    <string name="reverse_face_photo">反面照</string>
+    <string name="submit">提交</string>
+    <string name="identity_authentication_reminder">温馨提示\n照片要求：jpg/png格式，大小不超过4M，信息清晰\n* 请上传您本人【双手手持】身份证正面的照片+【手写DCE UID】+【手写当天认证日期】，请参考示例图。\n*  请上传您本人【双手手持】身份证反面的照片务必保证证件上所有信息清晰可见，不允许任何修改或遮挡，否则影响您的身份认证。\n* 申请失败，则请您根据提示信息重新提交申请。</string>
+    <string name="authentication_reviewing">正在审核中</string>
+    <string name="withdrawal_reviewing">审核中</string>
+    <string name="authentication_success">身份认证成功</string>
+    <string name="authentication_fail">身份认证失败</string>
+    <string name="identity_state_reviewing_des">您的身份材料已成功提交至平台，平台正在进一步审核中，请您耐心等待审核结果，感谢您的支持与合作.</string>
+    <string name="reviewing_name">姓\u3000\u3000名：</string>
+    <string name="reviewing_number">证件号码：</string>
+    <string name="reviewing_type">证件类型：</string>
+    <string name="reviewing_fail_reason">失败原因</string>
+    <string name="reviewing_fail_reason_one">1、证件照模糊不清</string>
+    <string name="reviewing_fail_reason_tow">2、证件有效期已过</string>
+    <string name="reviewing_fail_reason_three">3、证件照格式错误</string>
+    <string name="authenticate_retry">重新认证</string>
+    <string name="help_center">帮助中心</string>
+    <string name="contact_us">联系我们</string>
+    <string name="about_us">关于我们</string>
+    <string name="information_announcement">信息公示</string>
+    <string name="industry_news">行业资讯</string>
+    <string name="FAQ">常见问题</string>
+    <string name="articles_of_law">法律条款</string>
+    <string name="articles">条款说明</string>
+    <string name="touch_id">指\u3000\u3000纹</string>
+    <string name="set_language">设置语言</string>
+    <string name="about_version">关于版本</string>
+    <string name="logout">退出登录</string>
+    <string name="app_copyright">\@2018dce.cash All Rights Reserved</string>
+    <string name="sure">确认</string>
+    <string name="cancel">取消</string>
+    <string name="touch_id_open_success">Touch ID已开启！</string>
+    <string name="exit_app_des">退出DCE之后，您之前的设置项将会重新还原为默认选项，确定退出？</string>
+    <string name="safety_canter">安全中心</string>
+    <string name="phone_verify">手机验证</string>
+    <string name="mail_verify">邮箱验证</string>
+    <string name="google_verify">谷歌验证</string>
+    <string name="go_setting">去设置</string>
+    <string name="change_pwd">修改登录密码</string>
+    <string name="safety_remind_title">温馨提示</string>
+    <string name="safety_remind_des">为了您的资产安全，在您仅绑定一种验证方式时，不能关闭该验证方式，谢谢合作！</string>
+    <string name="safety_remind_sure">知道了</string>
+    <string name="change_pwd_remind">温馨提示：为了您的财产安全，修改登录密码后24小时内禁止提币操作。</string>
+    <string name="old_pwd">旧密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="confirmed_new_pwd">确认密码</string>
+    <string name="change_pwd_success">密码修改成功！</string>
+    <string name="google_verify_first_des">第一步：下载谷歌验证器APP\nAndroid：进入android应用市场下载谷歌验证器APP\nIOS：进入app store输入“Google Authenticator”下载谷歌验证器</string>
+    <string name="google_verify_second_des">第二步：使用谷歌验证器扫描谷歌二维码或填入密钥</string>
+    <string name="google_verify_third_des">第三步：绑定谷歌验证器</string>
+    <string name="open_google_verify">开启谷歌验证</string>
+    <string name="keys">密匙：</string>
+    <string name="google_key_remind">如果您无法扫描二维码，可以将该16位密钥手动输入到谷歌验证APP中</string>
+    <string name="google_key">谷歌验证码</string>
+    <string name="google_key_hint">请输入您的谷歌验证码</string>
+    <string name="google_verify_success">\u3000\u3000\u3000恭喜您\n成功绑定谷歌验证！</string>
+    <string name="google_verify_fail">验证码错误\n请重新输入！</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="bind">绑定</string>
+    <string name="please_input_mail">请输入验证邮箱</string>
+    <string name="please_input_phone">请输入验证手机</string>
+    <string name="please_input_mail_remind">*认证邮件可能会被误判为垃圾邮件，请注意查收</string>
+    <string name="please_input_phone_remind">*认证验证码可能会被误判为垃圾短息，请注意查收</string>
+    <string name="please_input_verification_code">请输入验证码</string>
+    <string name="select_market">选择市场</string>
+    <string name="select_coin">选择币种</string>
+    <string name="no_data">暂无数据</string>
+    <string name="network_errors">网络错误</string>
+    <string name="all">全部</string>
+    <string name="historic_records">历史记录</string>
+    <string name="guidance_first">安全、稳定、高效\n的虚拟数字货币交易所</string>
+    <string name="guidance_second">多维度验证为您的账户\n提供安全保障</string>
+    <string name="guidance_third">24小时专业级交易\n响应服务</string>
+    <string name="guidance_third_skip_des">开启DCE之旅</string>
+    <string name="skip">跳过</string>
+    <string name="skip_oax">开启DCE之旅</string>
+
+    <!-- 网络 -->
+    <string name="http_clickretry">点击重试</string>
+    <string name="http_check">请检查网络状态</string>
+    <string name="network_request_failed">网络请求失败</string>
+    <string name="http_network_errer">网络异常</string>
+    <string name="http_server_errer">服务器异常</string>
+    <string name="help_detail">帮助</string>
+    <string name="kline_committee">实时委托</string>
+    <string name="http_userid_isempty">ID未找到，请重新登录再试!</string>
+    <string name="to_login_go">请前往登录再试!</string>
+    <string name="PERMISSION_NO_SDK">"暂无读写SD卡权限\n是否前往设置？"</string>
+
+    <!-- 复制保存  -->
+    <string name="success">成功</string>
+    <string name="copy_success">复制成功</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_failure">保存失败</string>
+    <string name="total_price">总价</string>
+    <string name="please_input_price">请先输入价格</string>
+    <string name="please_input_volume">请先输入数量</string>
+    <string name="volume_can_not_be_zero">数量不能为零</string>
+    <string name="price_can_not_be_zero">价格不能为零</string>
+    <string name="high_24H">24H最高</string>
+    <string name="low_24H">24H最低</string>
+    <string name="volume_24H">24H成交额</string>
+    <string name="limit_24H">24H涨跌幅</string>
+    <string name="newest_price">最新价: </string>
+    <string name="newest_limit">涨幅: </string>
+
+
+    <!-- 实名认证 -->
+    <string name="authenticate_shz">正在审核中</string>
+    <string name="crad">身份证</string>
+    <string name="passport">护照</string>
+    <string name="permissions">权限申请</string>
+    <string name="permissions_show">在设置-应用-虎嗅-权限 中开启相机、存储权限，才能正常使用拍照或图片选择功能</string>
+    <string name="go_setting_hint">去设置</string>
+    <string name="pictures">拍照</string>
+    <string name="choose_photos">选择照片</string>
+
+    <string name="not_through">未通过</string>
+    <string name="unauthorized">未认证</string>
+    <string name="to_audit">待审核</string>
+    <string name="approved">审核通过</string>
+
+    <string name="please_login">请先登录</string>
+
+    <!-- 网易滑块 -->
+    <string name="captcha_sdk_errer">验证码SDK参数设置错误,请检查配置</string>
+    <string name="captcha_successful">效验成功</string>
+    <string name="captcha_failure">效验错误</string>
+    <string name="tip_loading">正在加载，请稍后...</string>
+    <string name="tip_no_network">网络异常，请检查网络后重试</string>
+    <string name="tip_validate_timeout">验证超时，请关闭并检查网络</string>
+    <string name="tip_init_timeout">初始化超时，请关闭并检查网络</string>
+    <string name="tip_load_failed">验证码加载失败</string>
+    <string name="kline_ma">MA</string>
+
+    <string name="clean_successful">删除成功</string>
+    <string name="unknown">未知</string>
+
+    <string name="please_market_show_hint">请先选择市场</string>
+    <string name="publisher">发布人：DCE官方</string>
+    <string name="no_data_available">No data available.</string>
+
+    <string name="search_hint">请输入交易对关键词搜索</string>
+
+    <string name="user_agreement">用户协议</string>
+
+    <string name="dialog_lv">等级介绍</string>
+    <string name="lv_1">Lv1:每日可提现额度为%1$sBTC</string>
+    <string name="lv_2">Lv2:每日可提现额度为%1$sBTC</string>
+    <string name="lv_3">Lv3:更多额度请联系官方客服</string>
+
+    <string name="connect_server_fail">连接服务器失败</string>
+
+    <string name="no_market_data">暂无收藏币种</string>
+
+    <!--红包-->
+    <string name="fa_red">发红包</string>
+    <string name="red_ordinary">普通红包</string>
+    <string name="red_luck">拼手气红包</string>
+    <string name="red_select_market">选择币种</string>
+    <string name="red_a_single_market">单个币数</string>
+    <string name="red_envelope_market">红包个数</string>
+    <string name="red_add_count">填写个数</string>
+    <string name="red_a">个</string>
+    <string name="red_hint_count_same">每人领到币数相同</string>
+    <string name="red_hint_count_random">每人领到币数随机</string>
+    <string name="red_banner">余额：</string>
+    <string name="red_envelope_count">红包个数</string>
+    <string name="red_gxfc">红包一甩，别墅靠海！</string>
+    <string name="red_set_ordinary">塞币进红包</string>
+    <string name="red_problem">遇到问题</string>
+    <string name="red_hint_show">未领取的红包，将于24小时后退回账户</string>
+    <string name="red_sum_count">总币数</string>
+    <string name="set_red">发出的红包</string>
+    <string name="get_red">领取的红包</string>
+    <string name="red_help">遇到问题</string>
+    <string name="red_help_1">问题1: 发红包的额度以及笔数限制</string>
+    <string name="red_help_2">单个红包（包括普通红包和拼手气红包）限额200个，每次最多发100个红包。单日余额发红包最高币数10万个。若达到限制，请次日再试。</string>
+    <string name="red_help_3">问题2: 发出的红包能不能撤销？</string>
+    <string name="red_help_4">若分享的平台支持消息撤回，则可撤回红包。</string>
+    <string name="red_help_5">问题3: 如何处理未被领完的红包？</string>
+    <string name="red_help_6">未被领完的红包，在24小时之后将自动退回到账户余额，可在【资产】>【历史记录】中查看记录。</string>
+    <string name="red_help_7">问题4: 未成功分享到第三方平台，币却被扣了？</string>
+    <string name="red_help_8">如果红包未成功分享到第三方平台，币却被扣了，在24小时之后将自动退回到账户余额。在发红包页面点击右上角【发出的红包】，找到该红包记录，点击进详情页面，可继续分享此红包。</string>
+    <string name="red_service">联系客服(公众号) : weblacksheep</string>
+
+    <string name="red_send">发出的红包</string>
+    <string name="red_receive">收到的红包</string>
+    <string name="red_send_sum_set">共发出</string>
+    <string name="red_send_sum_get">共领取</string>
+    <string name="red_receive_sum_hint">以当时领取红包的估值为准</string>
+    <string name="red_send_sum_hint">以当时发送红包的估值为准</string>
+    <string name="red_send_count">发出0个红包</string>
+    <string name="red_receive_count">收到0个红包</string>
+
+    <string name="red_share_get">选择要分享的平台</string>
+    <string name="red_share_wx">微信好友</string>
+    <string name="red_share_wxpyq">朋友圈</string>
+    <string name="red_share_qq">QQ</string>
+    <string name="red_share_dd">钉钉</string>
+    <string name="red_share_copy_url">复制链接</string>
+
+    <string name="red_oax">DCE红包</string>
+    <string name="red_oax_share_success">分享成功</string>
+    <string name="red_oax_banner">剩余币数</string>
+    <string name="red_oax_next">继续发送此红包</string>
+
+    <string name="red_ylq">已领取</string>
+    <string name="red_oax_hint_show">已领取0/0个红包，共0/0BTC</string>
+
+    <string name="red_errer_hint_show">一次红包币数不可超过0个</string>
+
+    <!--平台收益-->
+    <string name="earnings_overview">总览</string>
+    <string name="my_earnings">我的收益</string>
+    <string name="total_feedback">回馈累计</string>
+    <string name="total_bonus">分红累计</string>
+    <string name="yesterday_feedback">昨日回馈收益折合</string>
+    <string name="today_FeedBack_Sum">今日待分配收入折合</string>
+    <string name="today_Compensation_FeedBack">今日补偿待分配收入折合</string>
+    <string name="today_Trade_FeedBack">今日交易待分配收入折合</string>
+    <string name="today_million_FeedBack">今日持有X每百万份收入折合</string>
+    <string name="thursday_trade_feedback">本周四累积待分配折合</string>
+    <string name="weekday_trade_feedback">本周日累积待分配折合</string>
+    <string name="x_token_circulation_total">X-token流通市值</string>
+    <string name="x_token_circulation_market_value">X-token流通总量</string>
+    <string name="x_token_total_market_value">X-token总市值</string>
+    <string name="x_token_total">X-token总量</string>
+
+
+</resources>

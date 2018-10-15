@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:srlEnableAutoLoadMore="false"
+        app:srlEnableLoadMore="true"
+        app:srlEnableLoadMoreWhenContentNotFull="false">
+
+
+        <cn.dagongniu.oax.customview.ClassicsHeader
+            android:background="@color/df_F8F8F8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/status_bar_height"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlDrawableArrowSize="15dp"
+            app:srlDrawableMarginRight="15dp"
+            app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+            app:srlDrawableProgressSize="20dp"
+            app:srlEnableLastTime="true"
+            app:srlFinishDuration="500"
+            app:srlTextSizeTime="10sp"
+            app:srlTextSizeTitle="14sp"
+            app:srlTextTimeMarginTop="2dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <cn.dagongniu.oax.customview.MyScrollView
+                    android:id="@+id/scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical">
+
+                        <cn.bingoogolapple.bgabanner.BGABanner
+                            android:id="@+id/banner_home_zoomCenter"
+                            style="@style/BannerDefaultStyle"
+                            android:layout_height="@dimen/d380"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="center"
+                            app:banner_numberIndicatorBackground="@color/df_theme_bg_gray"
+                            app:banner_pointContainerBackground="@color/transparent"
+                            app:banner_pointDrawable="@drawable/bga_banner_selector_point_main"
+                            app:banner_transitionEffect="fade" />
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:id="@+id/rl_notice"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d100"
+                            android:background="@color/white">
+
+                            <ImageView
+                                android:id="@+id/notice_im"
+                                android:layout_width="@dimen/d24"
+                                android:layout_height="@dimen/d24"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/d24"
+                                android:src="@mipmap/laba_log" />
+
+
+                            <cn.dagongniu.oax.customview.textview.AdvertView
+                                android:id="@+id/activity_main_advertView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/d60"
+                                android:layout_toRightOf="@+id/notice_im"
+                                android:padding="@dimen/d10"
+                                android:text="关于五月份上线交易平台的公告"
+                                android:textColor="@color/df_font"
+                                android:textSize="@dimen/d24" />
+
+                            <ImageView
+                                android:layout_width="@dimen/d13"
+                                android:layout_height="@dimen/d24"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/d20"
+                                android:src="@mipmap/shape" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/df_line" />
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white">
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/main_market_view_pager"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/d200" />
+
+                            <net.lucode.hackware.magicindicator.MagicIndicator
+                                android:id="@+id/main_market_indicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_below="@+id/main_market_view_pager"
+                                android:layout_centerHorizontal="true"
+                                android:paddingBottom="@dimen/d10" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/d30"
+                            android:background="@color/df_theme_bg_gray" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <RelativeLayout
+                                android:id="@+id/rl_indicator"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <net.lucode.hackware.magicindicator.MagicIndicator
+                                    android:id="@+id/other_market_indicator"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/d100"
+                                    android:layout_gravity="center_horizontal" />
+
+                                <View
+                                    android:id="@+id/view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/df_line" />
+
+
+                            </RelativeLayout>
+
+
+                            <cn.dagongniu.oax.customview.CustomViewPager
+                                android:id="@+id/view_pager_market"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rl_indicator">
+
+
+                            </cn.dagongniu.oax.customview.CustomViewPager>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </cn.dagongniu.oax.customview.MyScrollView>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

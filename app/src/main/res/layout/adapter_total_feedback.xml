@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/d60"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60"
+        android:background="@drawable/myearnings_red_bg"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/d10"
+            android:layout_height="@dimen/d10"
+            android:layout_marginLeft="@dimen/d15"
+            android:src="@drawable/myearnings_dot" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/d15"
+            android:textColor="@color/df_FFDA9E"
+            android:textSize="@dimen/d28" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d10"
+        android:layout_marginTop="@dimen/d30"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_x_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d15"
+            android:textColor="@color/df_font"
+            android:textSize="@dimen/d36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/d15"
+            android:text="X"
+            android:textColor="@color/df_font"
+            android:textSize="@dimen/d28" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_eth_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/d30"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginTop="@dimen/d10"
+        android:background="@color/white"
+        android:textColor="@color/df_font"
+        android:textSize="@dimen/d24" />
+</com.zhy.autolayout.AutoLinearLayout>

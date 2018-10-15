@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d90"
+        android:paddingLeft="@dimen/d20"
+        android:paddingRight="@dimen/d20">
+
+        <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="@dimen/d60"
+            android:layout_height="@dimen/d90"
+            android:layout_gravity="center_vertical|left"
+            android:padding="@dimen/d20"
+            android:src="@mipmap/icon_back" />
+
+
+        <ImageView
+            android:id="@+id/iv_title_more"
+            android:layout_width="@dimen/d75"
+            android:layout_height="@dimen/d75"
+            android:layout_gravity="center_vertical|left"
+            android:padding="@dimen/d10"
+            android:src="@mipmap/icon_more" />
+
+        <TextView
+            android:id="@+id/tv_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/d80"
+            android:layout_marginRight="@dimen/d80"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="这是标题"
+            android:textColor="@color/ivory"
+            android:textSize="@dimen/d28" />
+
+        <ImageView
+            android:id="@+id/iv_title_right"
+            android:layout_width="@dimen/d60"
+            android:layout_height="@dimen/d60"
+            android:layout_gravity="right|center_vertical"
+            android:padding="@dimen/d10"
+            android:src="@mipmap/msg2" />
+
+        <TextView
+            android:id="@+id/tv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:padding="@dimen/d10"
+            android:text="左侧"
+            android:textColor="@color/ivory"
+            android:textSize="@dimen/s16"
+            android:visibility="visible" />
+
+    </com.zhy.autolayout.AutoFrameLayout>
+</FrameLayout>

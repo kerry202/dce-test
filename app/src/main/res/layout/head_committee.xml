@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/d30"
+        android:paddingRight="@dimen/d30">
+
+        <TextView
+            android:id="@+id/tv_buy_or_sell"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/kline_buy"
+            android:textColor="@color/df_font"
+            android:textSize="@dimen/d28" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/d30"
+            android:text="@string/kline_sell"
+            android:textColor="@color/df_font"
+            android:textSize="@dimen/d28" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/df_theme_bg_gray" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d48"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/d30"
+        android:paddingRight="@dimen/d30">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/kline_price"
+                android:textColor="@color/df_font_hui"
+                android:textSize="@dimen/d20" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="@string/committee_amount"
+                android:textColor="@color/df_font_hui"
+                android:textSize="@dimen/d20" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/d30"
+                android:text="@string/kline_price"
+                android:textColor="@color/df_font_hui"
+                android:textSize="@dimen/d20" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="@string/committee_amount"
+                android:textColor="@color/df_font_hui"
+                android:textSize="@dimen/d20" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

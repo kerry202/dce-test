@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/d20"
+            android:paddingTop="@dimen/d20">
+
+            <TextView
+                android:id="@+id/tv_home1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BNB/BTC"
+                android:textColor="@color/df_font"
+                android:textSize="@dimen/d24" />
+
+            <TextView
+                android:id="@+id/tv_home1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0000017"
+                android:textColor="@color/df_font"
+                android:textSize="@dimen/d32"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_home1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+3.57%"
+                android:textColor="@color/df_font"
+                android:textSize="@dimen/d26" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".assets.WithdrawalActivity">
+
+    <cn.dagongniu.oax.customview.MyTradingToolbar
+        android:id="@+id/withdrawal_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.75"
+        app:srlEnableLoadMore="true"
+        android:background="@color/df_F8F8F8"
+        app:srlEnablePureScrollMode="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:id="@+id/ll_mian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/withdrawal_toolbar"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/d30"
+                    android:paddingRight="@dimen/d30">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d88">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="---"
+                            android:textColor="@color/df_font"
+                            android:textSize="@dimen/d30" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_prompt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/d50">
+
+                            <TextView
+                                android:id="@+id/tv_remaining"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/d10"
+                                android:layout_toLeftOf="@+id/im_prompt"
+                                android:text="@string/assets_keti_edu"
+                                android:textColor="@color/df_999999"
+                                android:textSize="@dimen/d24" />
+
+                            <ImageView
+                                android:id="@+id/im_prompt"
+                                android:layout_width="@dimen/d22"
+                                android:layout_height="@dimen/d22"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/prompt_log" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d80">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/assets_sum_e"
+                            android:textColor="@color/df_font_hui"
+                            android:textSize="@dimen/d30" />
+
+                        <TextView
+                            android:id="@+id/tv_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:text="0"
+                            android:textColor="@color/df_font_hui"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/d30" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/df_theme_bg_gray" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d80">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/assets_kyzc"
+                            android:textColor="@color/df_font_hui"
+                            android:textSize="@dimen/d30" />
+
+                        <TextView
+                            android:id="@+id/tv_banlance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:text="0"
+                            android:textColor="@color/df_FFB933"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/d30" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/df_theme_bg_gray" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d26"
+                        android:text="@string/assets_txje"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d26" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d60"
+                        android:layout_marginBottom="@dimen/d10"
+                        android:layout_marginTop="@dimen/d10">
+
+                        <TextView
+                            android:id="@+id/tv_min_max_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/assets_min_max"
+                            android:textColor="@color/df_999999"
+                            android:textSize="@dimen/d24" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d100"
+                        android:background="@color/df_F8F8F8">
+
+                        <EditText
+                            android:id="@+id/et_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d20"
+                            android:layout_marginRight="@dimen/d100"
+                            android:background="@null"
+                            android:hint="@string/assets_icon_count"
+                            android:inputType="numberDecimal"
+                            android:maxLength="20"
+                            android:textColor="@color/df_font"
+                            android:textColorHint="@color/df_999999"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/d26" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_all_withdrawal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/d20"
+                            android:background="@null">
+
+                            <!--@drawable/border_focused_withd_butt-->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/assets_all_tx"
+                                android:textColor="@color/df_theme"
+                                android:textSize="@dimen/d26" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/d20"
+                        android:layout_marginTop="@dimen/d12">
+
+                        <TextView
+                            android:id="@+id/tv_fee_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/assets_sxfy"
+                            android:textColor="@color/df_999999"
+                            android:textSize="@dimen/d24" />
+
+                        <TextView
+                            android:id="@+id/tv_fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tv_fee_hint"
+                            android:text="0"
+                            android:textColor="@color/df_4A90E2"
+                            android:textSize="@dimen/d24" />
+
+
+                        <TextView
+                            android:id="@+id/tv_actual_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_actual"
+                            android:text="@string/assets_sjdz"
+                            android:textColor="@color/df_999999"
+                            android:textSize="@dimen/d24" />
+
+                        <TextView
+                            android:id="@+id/tv_actual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="0"
+                            android:textColor="@color/df_4A90E2"
+                            android:textSize="@dimen/d24" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d20"
+                    android:background="@color/df_F8F8F8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_mian"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/d20"
+                    android:paddingLeft="@dimen/d30"
+                    android:paddingRight="@dimen/d30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d22"
+                        android:text="@string/assets_tbdz"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d26" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d100"
+                        android:layout_marginTop="@dimen/d24"
+                        android:background="@color/df_F8F8F8">
+
+                        <TextView
+                            android:id="@+id/tv_add"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:layout_marginRight="@dimen/d80"
+                            android:background="@null"
+                            android:hint="@string/assets_address"
+                            android:textColor="@color/df_font"
+                            android:textColorHint="@color/df_999999"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/d26" />
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/d30">
+
+                            <ImageView
+                                android:layout_width="@dimen/d22"
+                                android:layout_height="@dimen/d13"
+                                android:src="@drawable/sanjiao_icon" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d120"
+                        android:layout_marginTop="@dimen/d20"
+                        android:background="@color/df_theme_bg_gray"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:layout_marginRight="@dimen/d30"
+                            android:background="@null"
+                            android:hint="@string/assets_add_tag"
+                            android:lines="20"
+                            android:textColor="@color/df_font"
+                            android:textColorHint="@color/df_999999"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/d30" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d20"
+                        android:text="@string/assets_wxts"
+                        android:textColor="@color/df_theme"
+                        android:textSize="@dimen/d24"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bt_withdrawal"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d90"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/d40"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:background="@drawable/login_btu_cancel_grey_bg"
+                android:text="@string/assets_withdrawal"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d30" />
+
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

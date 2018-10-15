@@ -1,0 +1,251 @@
+apply plugin: 'com.android.application'
+
+def packageTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+def appShortName = "oax"
+
+android {
+    compileSdkVersion 27
+    useLibrary 'org.apache.http.legacy'
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "cn.dagongniu.dce"
+        minSdkVersion 16
+        targetSdkVersion 25
+        
+        versionCode 2
+        versionName "1.0.4"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+    }
+
+    signingConfigs {
+//        debug {
+//            keyAlias 'oax'
+//            keyPassword 'oax2018'
+//            storeFile file('D:/android/project/DCE/Dagongniu/app/keystore.jks')
+//            storePassword 'oax2018'
+//        }
+//
+//        release {
+//            keyAlias 'oax'
+//            keyPassword 'oax2018'
+//            storeFile file('D:/android/project/DCE/Dagongniu/app/keystore.jks')
+//            storePassword 'oax2018'
+//        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        local {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            matchingFallbacks = ['debug']
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def baseName = appShortName + "_" + "${defaultConfig.versionName}_${packageTime()}" + "_" + variant.productFlavors[0].name
+            def newApkName
+            if (variant.buildType.name.equals('release')) {
+                newApkName = baseName + '_release.apk'
+            } else {
+                newApkName = baseName + '_debug.apk'
+            }
+            def outFile = output.outputFile
+            if (outFile != null && outFile.name.endsWith('.apk')) {
+                outputFileName = newApkName
+            }
+        }
+    }
+
+    /**
+     * 友盟渠道号
+     */
+    productFlavors {
+        oax {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "oax"]
+        }
+        wandoujia {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
+        }
+    }
+}
+
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:appcompat-v7:27.1.1'
+    api 'com.android.support:recyclerview-v7:27.1.1'
+    api 'com.android.support:cardview-v7:27.1.1'
+    api 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //gson
+    api 'com.google.code.gson:gson:2.8.0'
+
+    //百分百适配
+    api 'com.zhy:autolayout:1.4.3'
+
+    //Glide
+    api 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+
+    //klog
+    api 'com.github.zhaokaiqiang.klog:library:1.6.0'
+
+    //butterknife
+    api 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //BaseRecyclerViewAdapterHelper
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+
+    //okgo
+    api 'com.lzy.net:okgo:2.1.3'
+
+    //kprogresshud  网络请求dialog
+    api 'com.kaopiz:kprogresshud:1.0.5'
+
+    //json
+    api 'com.alibaba:fastjson:1.2.35'
+
+    //tabview
+    api 'com.ycl.tabview.library:tabviewlibrary:1.0'
+
+    //Toasty
+    api 'com.github.GrenderG:Toasty:1.3.0'
+
+    //SmartRefreshLayout
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1'
+
+    //没有使用特殊Header，可以不加这行
+    api 'com.android.support:design:27.1.1'
+
+    //版本随意（非必须，引用可以解决无法预览问题）
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+
+    //MagicIndicator
+    api 'com.github.hackware1993:MagicIndicator:1.5.0'
+
+    //BGABanner-Android
+    api 'cn.bingoogolapple:bga-banner:2.2.4@aar'
+    api 'com.android.support:support-v4:27.1.1'
+
+    //retrofit2
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
+
+    //ImmersionBar
+    api 'com.gyf.barlibrary:barlibrary:2.3.0'
+
+    //eventbus
+    api 'org.greenrobot:eventbus:3.0.0'
+
+    //leakcanary 内存泄漏检测
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+    //MPChartLib 图表库
+    implementation project(':MPChartLib')
+
+    //vpn
+    api 'com.journeyapps:zxing-android-embedded:3.5.0'
+    api 'com.google.zxing:core:3.0.1'
+    api 'org.bouncycastle:bcprov-jdk15on:1.57'
+    api 'com.futuremind.recyclerfastscroll:fastscroll:0.2.5'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation project(path: ':FlycoTabLayout_Lib')
+
+    //流式布局
+    api 'com.hyman:flowlayout-lib:1.1.2'
+
+    //国际化区号号码效验
+    api 'io.michaelrocks:libphonenumber-android:8.9.5'
+
+    //WebSocket
+    implementation project(':StompAndroidlib')
+
+    //App 更新
+    implementation project(':UpdateAppUtils')
+
+    //wavesidebar
+    api 'com.gjiazhe:wavesidebar:1.3'
+    implementation files('libs/zxingjar-1.1.jar')
+    api 'com.github.limxing:Android-PromptDialog:1.1.3'
+
+    //implementation project(':takephoto_library')
+    implementation project(':FlycoTabLayout_Lib')
+
+    //PhotoFactory
+
+    //    implementation 'com.github.AnliaLee:PhotoFactory:1.1.4'
+    api 'com.lovedise:permissiongen:0.0.6'
+    implementation project(':PhotoFactory')
+
+    //滑块
+
+    //api 'com.github.yidun:captcha-android-demo:2.4.2'
+
+    //PickerView
+
+    //api 'com.ramesh.mypicker:pickerview:1.0'
+
+    //implementation project(':pickerview')
+
+    //友盟统计
+    implementation files('libs/umeng-analytics-7.5.3.jar')
+    implementation files('libs/umeng-common-1.5.3.jar')
+    implementation files('libs/jcore-android-1.2.1.jar')
+    implementation files('libs/jpush-android-3.1.3.jar')
+
+    //热修复
+//    api 'com.aliyun.ams:alicloud-android-hotfix:3.2.3'
+
+    //分享
+    implementation files('libs/umeng-share-core-6.9.3.jar')
+    implementation files('libs/umeng-sharetool-6.9.3.jar')
+    implementation files('libs/umeng-share-Ding-6.9.3.jar')
+    implementation files('libs/umeng-share-QQ-simplify-6.9.3.jar')
+    implementation files('libs/umeng-share-wechat-full-6.9.3.jar')
+    implementation files('libs/libddshare.jar')
+    api 'com.android.support:multidex:1.0.0'
+    api 'com.github.Hitomis:CrazyShadow:v1.0.1'
+}

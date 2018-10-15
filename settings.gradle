@@ -1,0 +1,1 @@
+include ':app',":MPChartLib",":FlycoTabLayout_Lib",":StompAndroidlib",":UpdateAppUtils","PhotoFactory"

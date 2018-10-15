@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/adapter_committee_item_height"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d30"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/d05"
+        android:paddingTop="@dimen/d05"
+        android:textColor="@color/kline_buy_bg"
+        android:textSize="@dimen/d20" />
+
+    <TextView
+        android:id="@+id/tv_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/d30"
+        android:gravity="center_vertical|right"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/d05"
+        android:paddingTop="@dimen/d05"
+        android:singleLine="true"
+        android:textColor="@color/df_font"
+        android:textSize="@dimen/d20" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

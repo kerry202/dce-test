@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.dagongniu.oax.customview.CommonToolbar
+        android:id="@+id/commontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.75"
+        android:background="@color/df_F8F8F8"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:layout_marginLeft="@dimen/d30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/phone_verify"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d28" />
+
+                <Switch
+                    android:id="@+id/phone_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:checked="true"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track"
+                    android:visibility="gone" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_setting_phone_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/d400"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/go_setting"
+                        android:textColor="@color/df_FACE1F"
+                        android:textSize="@dimen/d26" />
+
+                    <ImageView
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d26"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:src="@drawable/go_detail_icon" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/split_line"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/df_line" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:layout_marginLeft="@dimen/d30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/mail_verify"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d28" />
+
+                <Switch
+                    android:id="@+id/mail_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:checked="true"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track"
+                    android:visibility="gone" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_setting_mail_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/d400"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/go_setting"
+                        android:textColor="@color/df_FACE1F"
+                        android:textSize="@dimen/d26" />
+
+                    <ImageView
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d26"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:src="@drawable/go_detail_icon" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/split_line"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/df_line" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:layout_marginLeft="@dimen/d30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/google_verify"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d28" />
+
+                <Switch
+                    android:id="@+id/google_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:checked="true"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track"
+                    android:visibility="gone" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_setting_google_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/d400">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/go_setting"
+                        android:textColor="@color/df_FACE1F"
+                        android:textSize="@dimen/d26" />
+
+                    <ImageView
+                        android:layout_width="@dimen/d15"
+                        android:layout_height="@dimen/d26"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:src="@drawable/go_detail_icon" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/split_line"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/df_line" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_change_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:layout_marginLeft="@dimen/d30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/change_pwd"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d28" />
+
+                <ImageView
+                    android:layout_width="@dimen/d15"
+                    android:layout_height="@dimen/d26"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:src="@drawable/go_detail_icon" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/split_line"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/df_line" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</com.zhy.autolayout.AutoLinearLayout>

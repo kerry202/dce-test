@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".assets.WithdTopSearchActivity">
+
+
+    <cn.dagongniu.oax.customview.MyTradingToolbar
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginRight="@dimen/d30"
+        android:layout_marginTop="@dimen/d20"
+        android:background="@drawable/withd_top_search_bg">
+
+        <ImageView
+            android:id="@+id/im_withd_top"
+            android:layout_width="@dimen/d26"
+            android:layout_height="@dimen/d26"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d30"
+            android:src="@drawable/search_log" />
+
+        <EditText
+            android:hint="@string/search_hint"
+            android:textColorHint="@color/df_font_gray"
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_marginRight="@dimen/d30"
+            android:layout_toRightOf="@+id/im_withd_top"
+            android:background="@null"
+            android:lines="1"
+            android:textColor="@color/df_font"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/d24" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/df_F8F8F8"
+            app:srlEnableAutoLoadMore="false"
+            app:srlEnableLoadMore="false"
+            app:srlEnableLoadMoreWhenContentNotFull="false">
+
+            <cn.dagongniu.oax.customview.ClassicsHeader
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srlClassicsSpinnerStyle="FixedBehind"
+                app:srlDrawableArrowSize="15dp"
+                app:srlDrawableMarginRight="15dp"
+                app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+                app:srlDrawableProgressSize="20dp"
+                app:srlEnableLastTime="true"
+                app:srlFinishDuration="500"
+                app:srlTextSizeTime="10sp"
+                app:srlTextSizeTitle="14sp"
+                app:srlTextTimeMarginTop="2dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/d20"
+                android:background="@color/white"
+                android:paddingTop="@dimen/d50" />
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <com.gjiazhe.wavesidebar.WaveSideBar
+            android:id="@+id/side_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/d20"
+            android:paddingRight="@dimen/d20"
+            app:sidebar_text_color="#8D6E63" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

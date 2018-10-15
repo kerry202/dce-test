@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".assets.ADDAddressActivity">
+
+    <cn.dagongniu.oax.customview.MyTradingToolbar
+        android:id="@+id/add_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.75"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_mian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/withdrawal_toolbar"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d30"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d30" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d40"
+                    android:text="@string/assets_address"
+                    android:textColor="@color/df_font_hui"
+                    android:textSize="@dimen/d26" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d160"
+                    android:layout_marginTop="@dimen/d20"
+                    android:background="@color/df_theme_bg_gray">
+
+                    <EditText
+                        android:id="@+id/et_adderss"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/d10"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginRight="@dimen/d30"
+                        android:layout_marginTop="@dimen/d10"
+                        android:background="@null"
+                        android:digits="@string/filter_vcode"
+                        android:hint="@string/add_adderss"
+                        android:inputType="number"
+                        android:maxLength="64"
+                        android:textColor="@color/df_font"
+                        android:textColorHint="@color/df_999999"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/d26" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d40"
+                    android:text="@string/assets_note"
+                    android:textColor="@color/df_font_hui"
+                    android:textSize="@dimen/d26" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d120"
+                    android:layout_marginTop="@dimen/d20"
+                    android:background="@color/df_theme_bg_gray">
+
+                    <EditText
+                        android:id="@+id/et_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="@dimen/d10"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginRight="@dimen/d30"
+                        android:layout_marginTop="@dimen/d10"
+                        android:background="@null"
+                        android:hint="@string/add_note"
+                        android:maxLength="15"
+                        android:textColor="@color/df_font"
+                        android:textColorHint="@color/df_999999"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/d26" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/bt_commit"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d80"
+                    android:layout_marginTop="@dimen/d100"
+                    android:background="@drawable/login_btu_cancel_grey_bg"
+                    android:text="@string/assets_yes_add"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d30" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
+

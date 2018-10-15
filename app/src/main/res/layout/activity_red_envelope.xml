@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".assets.RedEnvelopeActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d90"
+        android:background="@color/df_EC7151">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/im_left"
+                android:layout_width="@dimen/d70"
+                android:layout_height="@dimen/d70"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/d22"
+                android:src="@drawable/icon_back_white" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tv_left_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/fa_red"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d32" />
+
+                <ImageView
+                    android:id="@+id/im_sj"
+                    android:layout_width="@dimen/d25"
+                    android:layout_height="@dimen/d20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d05"
+                    android:layout_toRightOf="@+id/tv_left_name"
+                    android:src="@drawable/sanjiao_icon"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/d10"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/im_more"
+                android:layout_width="@dimen/d70"
+                android:layout_height="@dimen/d70"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/d15"
+                android:src="@drawable/icon_more3x" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/ordinary_and_luck_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d70"
+        android:background="@color/df_EC7151"
+        android:paddingLeft="@dimen/d100"
+        android:paddingRight="@dimen/d100"
+        app:tl_textBold="SELECT"
+        app:tl_textsize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d05"
+        android:background="@color/df_EC7151" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/ll_mian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/df_F8F8F8"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_sele_currency"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d30"
+                android:background="@drawable/red_cancel_dialog_white_bg">
+
+                <TextView
+                    android:id="@+id/tv_sele_market"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:text="@string/red_select_market"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_sele_market">
+
+                    <TextView
+                        android:id="@+id/tv_market"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d20"
+                        android:layout_marginRight="@dimen/d20"
+                        android:layout_toLeftOf="@+id/im_next_right"
+                        android:text="@string/select_coin"
+                        android:textColor="@color/df_333333"
+                        android:textSize="@dimen/d28" />
+
+                    <ImageView
+                        android:id="@+id/im_next_right"
+                        android:layout_width="@dimen/d40"
+                        android:layout_height="@dimen/d40"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d06"
+                        android:src="@drawable/icon_next_right" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d20"
+                android:background="@drawable/red_cancel_dialog_white_bg">
+
+                <TextView
+                    android:id="@+id/tv_sele_market_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:text="@string/red_sum_count"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_sele_market_count">
+
+                    <cn.dagongniu.oax.customview.SelectionInputEditText
+                        android:id="@+id/et_market_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d20"
+                        android:layout_toLeftOf="@+id/tv_next_right_count"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="@string/red_add_count"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:paddingRight="@dimen/d20"
+                        android:textColor="@color/df_333333"
+                        android:textColorHint="@color/df_D8D8D8"
+                        android:textSize="@dimen/d28" />
+
+
+                    <TextView
+                        android:id="@+id/tv_next_right_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d20"
+                        android:text="@string/red_a"
+                        android:textColor="@color/df_333333"
+                        android:textSize="@dimen/d28" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d10"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d10">
+
+                <TextView
+                    android:id="@+id/tv_hint_same"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:text="@string/red_hint_count_random"
+                    android:textColor="@color/df_999999"
+                    android:textSize="@dimen/d24" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_toRightOf="@+id/tv_hint_same">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_balance"
+                        android:text="@string/red_banner"
+                        android:textColor="@color/df_999999"
+                        android:textSize="@dimen/d24" />
+
+
+                    <TextView
+                        android:id="@+id/tv_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="0"
+                        android:textColor="@color/df_999999"
+                        android:textSize="@dimen/d26" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d05"
+                android:background="@drawable/red_cancel_dialog_white_bg">
+
+                <TextView
+                    android:id="@+id/tv_envelope_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:text="@string/red_envelope_count"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_envelope_count">
+
+                    <cn.dagongniu.oax.customview.SelectionInputEditText
+                        android:id="@+id/et_red_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d20"
+                        android:layout_toLeftOf="@+id/tv_envelope_next_right_count"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="@string/red_add_count"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:paddingRight="@dimen/d20"
+                        android:textColor="@color/df_333333"
+                        android:textColorHint="@color/df_D8D8D8"
+                        android:textSize="@dimen/d28" />
+
+
+                    <TextView
+                        android:id="@+id/tv_envelope_next_right_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d20"
+                        android:text="@string/red_a"
+                        android:textColor="@color/df_333333"
+                        android:textSize="@dimen/d28" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d20"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/et_wishwords"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/red_gxfc"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:paddingBottom="@dimen/d10"
+                    android:paddingLeft="@dimen/d20"
+                    android:paddingRight="@dimen/d20"
+                    android:paddingTop="@dimen/d10"
+                    android:textColor="@color/df_333333"
+                    android:textColorHint="@color/df_D8D8D8"
+                    android:textSize="@dimen/d28" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d40"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_sum_market"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d60" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="≈¥0.00"
+                    android:textColor="@color/df_999999"
+                    android:textSize="@dimen/d34" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/rl_go_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d100"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginTop="@dimen/d40"
+                    android:background="@drawable/red_cancel_dialog_red_bg"
+                    android:gravity="center">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/red_set_ordinary"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/d30" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d50"
+                    android:layout_marginTop="@dimen/d20"
+                    android:text="@string/red_problem"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d26" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_errer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d50"
+            android:background="@color/df_FFF5E4"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_errer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/red_errer_hint_show"
+                android:textColor="@color/df_EC7151"
+                android:textSize="@dimen/d24" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_show_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/df_F8F8F8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/d20"
+            android:text="@string/red_hint_show"
+            android:textColor="@color/df_999999"
+            android:textSize="@dimen/d24" />
+
+    </RelativeLayout>
+
+</LinearLayout>

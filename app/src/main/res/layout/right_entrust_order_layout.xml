@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ent_ord_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d90">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_close"
+            android:layout_width="@dimen/d90"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/im_left"
+                android:layout_width="@dimen/d18"
+                android:layout_height="@dimen/d30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d30"
+                android:src="@drawable/return_log" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/entrust_order_ddsx"
+                android:textColor="@color/df_font"
+                android:textSize="@dimen/d30" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_screening"
+            android:layout_width="@dimen/d90"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/im_right"
+                android:layout_width="@dimen/d27"
+                android:layout_height="@dimen/d27"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/screening_new"
+                android:visibility="invisible" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ent_ord_title"
+        app:srlDragRate="0.75"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/d30"
+            android:paddingRight="@dimen/d30"
+            android:paddingTop="@dimen/d30">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entrust_order_date"
+                    android:textColor="@color/df_font_hui"
+                    android:textSize="@dimen/d24" />
+
+                <cn.dagongniu.oax.customview.RadioGroupEx
+                    android:id="@+id/radiogroup_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_data"
+                    android:layout_marginTop="@dimen/d30"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rb_day"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/radio_state_order_screening"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/entrust_order_t"
+                        android:textColor="@color/df_gray_666"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_weeks"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:background="@drawable/radio_state_order_screening"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/entrust_order_z"
+                        android:textColor="@color/df_gray_666"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_month"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:background="@drawable/radio_state_order_screening"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/entrust_order_y"
+                        android:textColor="@color/df_gray_666"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_three_month"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/d30"
+                        android:background="@drawable/radio_state_order_screening"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/entrust_order_3y"
+                        android:textColor="@color/df_gray_666"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_all"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginTop="@dimen/d30"
+                        android:background="@drawable/radio_state_order_screening"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/entrust_order_all"
+                        android:textColor="@color/df_gray_666"
+                        android:textSize="13sp" />
+
+                </cn.dagongniu.oax.customview.RadioGroupEx>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d50">
+
+                <TextView
+                    android:id="@+id/tv_market"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entrust_order_market"
+                    android:textColor="@color/df_font_hui"
+                    android:textSize="@dimen/d24" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d90"
+                    android:layout_below="@+id/tv_market"
+                    android:layout_marginTop="@dimen/d30"
+                    android:paddingBottom="@dimen/d30">
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:id="@+id/ll_all_market"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/radio_state_order_screening">
+
+                            <TextView
+                                android:id="@+id/tv_marketname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/entrust_order_bz"
+                                android:textColor="@color/df_999999"
+                                android:textSize="13sp" />
+
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/d50"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d10"
+                            android:layout_marginRight="@dimen/d10"
+                            android:gravity="center"
+                            android:text="/"
+                            android:textColor="@color/df_font_hui"
+                            android:textSize="@dimen/d30" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:id="@+id/ll_all"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/radio_state_order_screening">
+
+                            <TextView
+                                android:id="@+id/tv_categoryname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/df_999999"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/entrust_order_market"
+                                android:textSize="13sp" />
+
+
+                        </com.zhy.autolayout.AutoRelativeLayout>
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d50">
+
+                <TextView
+                    android:id="@+id/tv_lx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entrust_order_lx"
+                    android:textColor="@color/df_font_hui"
+                    android:textSize="@dimen/d24" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_lx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_lx"
+                    android:layout_marginTop="@dimen/d30"
+                    android:columnCount="3"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/RadioButton_buy_sell"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/radio_state_order_screening"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/entrust_order_buy_sell"
+                        android:textColor="@color/df_gray_666"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/RadioButton_buy"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:background="@drawable/radio_state_order_screening"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/entrust_order_buy"
+                        android:textColor="@color/df_gray_666"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/RadioButton_sell"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:background="@drawable/radio_state_order_screening"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/entrust_order_sell"
+                        android:textColor="@color/df_gray_666"
+                        android:textSize="13sp" />
+                </RadioGroup>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d50"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_ycycx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/entrust_order_ycycx"
+                    android:textColor="@color/df_font_hui"
+                    android:textSize="@dimen/d24" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d40"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30" />
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d80"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/d100"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginRight="@dimen/d30">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_reset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/d10"
+            android:layout_weight="1"
+            android:background="@drawable/border_focused_mine_grey_straight">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/entrust_order_reset"
+                android:textColor="@color/df_border_gray"
+                android:textSize="@dimen/d26" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/commit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_weight="1"
+            android:background="@color/df_theme">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/entrust_order_ok"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d26" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

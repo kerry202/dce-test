@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.dagongniu.oax.customview.CommonToolbar
+        android:id="@+id/commontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/nationality_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginRight="@dimen/d30"
+                        android:layout_marginTop="@dimen/d30"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/d70"
+                            android:layout_below="@+id/commontoolbar"
+                            android:gravity="center_vertical"
+                            android:text="@string/nationality"
+                            android:textColor="@color/df_font"
+                            android:textSize="@dimen/d28" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_countrycode"
+                            android:layout_width="@dimen/d500"
+                            android:layout_height="@dimen/d70"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/identity_item_bg"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tv_countrycode_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/d70"
+                                android:gravity="center_vertical"
+                                android:text="@string/china"
+                                android:textColor="@color/df_font"
+                                android:textSize="@dimen/d28" />
+
+                            <ImageView
+                                android:layout_width="@dimen/d16"
+                                android:layout_height="@dimen/d24"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/d05"
+                                android:layout_marginRight="@dimen/d02"
+                                android:paddingTop="@dimen/d02"
+                                android:src="@drawable/xiangyou_cion" />
+                        </RelativeLayout>
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/real_name_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nationality_container"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginRight="@dimen/d30"
+                        android:layout_marginTop="@dimen/d30"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/d70"
+                            android:layout_below="@+id/commontoolbar"
+                            android:gravity="center_vertical"
+                            android:text="@string/real_name"
+                            android:textColor="@color/df_font"
+                            android:textSize="@dimen/d28" />
+
+
+                        <EditText
+                            android:id="@+id/tv_name"
+                            android:layout_width="@dimen/d500"
+                            android:layout_height="@dimen/d70"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/identity_item_bg"
+                            android:hint="@string/real_name"
+                            android:singleLine="true"
+                            android:textSize="@dimen/d28" />
+
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/certificate_type_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/real_name_container"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginRight="@dimen/d30"
+                        android:layout_marginTop="@dimen/d30"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/d70"
+                            android:layout_below="@+id/commontoolbar"
+                            android:gravity="center_vertical"
+                            android:text="@string/certificate_type"
+                            android:textColor="@color/df_font"
+                            android:textSize="@dimen/d28" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_certificate"
+                            android:layout_width="@dimen/d500"
+                            android:layout_height="@dimen/d70"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/identity_item_bg"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tv_certificate_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/d70"
+                                android:gravity="center_vertical"
+                                android:text="@string/crad"
+                                android:textColor="@color/df_font"
+                                android:textSize="@dimen/d28" />
+
+                            <ImageView
+                                android:layout_width="@dimen/d16"
+                                android:layout_height="@dimen/d24"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/d05"
+                                android:layout_marginRight="@dimen/d02"
+                                android:paddingTop="@dimen/d02"
+                                android:src="@drawable/xiangyou_cion" />
+                        </RelativeLayout>
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/certificate_number_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/certificate_type_container"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginRight="@dimen/d30"
+                        android:layout_marginTop="@dimen/d30"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/d70"
+                            android:layout_below="@+id/commontoolbar"
+                            android:gravity="center_vertical"
+                            android:text="@string/certificate_number"
+                            android:textColor="@color/df_font"
+                            android:textSize="@dimen/d28" />
+
+
+                        <EditText
+                            android:id="@+id/tv_number"
+                            android:layout_width="@dimen/d500"
+                            android:layout_height="@dimen/d70"
+                            android:layout_alignParentRight="true"
+                            android:digits="@string/filter_vcode"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/identity_item_bg"
+                            android:hint="@string/input_certificate_number"
+                            android:inputType="text"
+                            android:maxLength="18"
+                            android:singleLine="true"
+                            android:textSize="@dimen/d28" />
+
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_Identity_Recognition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/certificate_number_container"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginTop="@dimen/d40"
+                        android:text="@string/Identity_Recognition"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d28" />
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/photo_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_Identity_Recognition"
+                        android:layout_marginTop="@dimen/d30"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/d30"
+                        android:paddingRight="@dimen/d30">
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:id="@+id/full_face_container"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/d15"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/im_full_face_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/d210"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/reversel_face_photo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/d70"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:text="@string/full_face_photo"
+                                android:textColor="@color/df_font"
+                                android:textSize="@dimen/d28" />
+
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:id="@+id/reverse_face_container"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/d15"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/im_reverse_face_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/d210"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/full_face_photo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/d70"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:text="@string/reverse_face_photo"
+                                android:textColor="@color/df_font"
+                                android:textSize="@dimen/d28" />
+
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_remind"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/photo_container"
+                        android:layout_marginTop="@dimen/d30"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="@dimen/d06"
+                        android:paddingLeft="@dimen/d30"
+                        android:paddingRight="@dimen/d30"
+                        android:text="@string/identity_authentication_reminder"
+                        android:textColor="@color/df_9B9B9B"
+                        android:textSize="@dimen/d24" />
+
+                    <TextView
+                        android:id="@+id/tv_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d90"
+                        android:layout_below="@+id/tv_remind"
+                        android:layout_marginBottom="@dimen/d30"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:layout_marginRight="@dimen/d30"
+                        android:layout_marginTop="@dimen/d30"
+                        android:background="@drawable/login_btu_cancel_grey_bg"
+                        android:gravity="center"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/d30" />
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </ScrollView>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

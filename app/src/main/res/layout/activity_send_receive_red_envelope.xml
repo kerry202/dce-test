@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".assets.SendReceiveRedEnvelopeActivity">
+
+    <cn.dagongniu.oax.customview.MyTradingToolbar
+        android:id="@+id/assets_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/df_F8F8F8"
+        app:srlEnableFooterFollowWhenLoadFinished="true"
+        app:srlEnableScrollContentWhenLoaded="true">
+
+        <cn.dagongniu.oax.customview.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="FixedBehind"
+            app:srlDrawableArrowSize="15dp"
+            app:srlDrawableMarginRight="15dp"
+            app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+            app:srlDrawableProgressSize="20dp"
+            app:srlEnableLastTime="true"
+            app:srlFinishDuration="500"
+            app:srlTextSizeTime="10sp"
+            app:srlTextSizeTitle="14sp"
+            app:srlTextTimeMarginTop="2dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/df_F8F8F8"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_title">
+
+                <android.support.v7.widget.RecyclerView
+
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/rl_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/d200"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/iv_load"
+                    android:layout_width="@dimen/d150"
+                    android:layout_height="@dimen/d150"
+                    android:src="@mipmap/state_empty" />
+
+                <TextView
+                    android:id="@+id/tv_load"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/d24"
+                    android:text="@string/no_data"
+                    android:textColor="@color/df_999999"
+                    android:textSize="@dimen/d26" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <cn.dagongniu.oax.customview.ClassicsFooter
+            android:id="@+id/classics_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="Translate"
+            app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+            app:srlDrawableProgressSize="20dp"
+            app:srlTextSizeTitle="14sp" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

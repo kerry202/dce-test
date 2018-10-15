@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_with_shadow"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d90">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d30"
+                android:gravity="center"
+                android:textColor="@color/df_font_gray"
+                android:textSize="@dimen/d26"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/im_left"
+                android:layout_width="@dimen/d70"
+                android:layout_height="@dimen/d70"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/d22"
+                android:src="@drawable/icon_back_black" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_coin_name_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tv_left_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d32" />
+
+                <ImageView
+                    android:id="@+id/im_sj"
+                    android:layout_width="@dimen/d25"
+                    android:layout_height="@dimen/d20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d05"
+                    android:layout_toRightOf="@+id/tv_left_name"
+                    android:src="@drawable/sanjiao_icon"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/d30"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/im_right"
+                android:layout_width="@dimen/d70"
+                android:layout_height="@dimen/d70"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/d10"
+                android:src="@mipmap/toolbar_trading_right" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/df_font_gray"
+                android:textSize="@dimen/d26" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trading.MarketChooseActivity">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/market_toolbar"
+        android:background="@drawable/background_with_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d90">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_close"
+                android:layout_width="@dimen/d100"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/im_left"
+                    android:layout_width="@dimen/d28"
+                    android:layout_height="@dimen/d28"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:src="@drawable/close" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tv_left_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/market"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d32" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/d30"
+            android:layout_weight="1">
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/market_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d80"
+        android:layout_below="@+id/market_toolbar">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/magic_indicator_market"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d80"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="@dimen/d10" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/df_eeeeee" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_market"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/market_title"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

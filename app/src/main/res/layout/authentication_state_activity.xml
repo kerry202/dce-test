@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.dagongniu.oax.customview.CommonToolbar
+        android:id="@+id/commontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.75"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_marginRight="@dimen/d30"
+            android:layout_marginTop="@dimen/d44">
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/authentication_reviewing"
+                android:textColor="@color/df_font"
+                android:textSize="@dimen/d30" />
+
+
+            <ImageView
+                android:id="@+id/iv_state"
+                android:layout_width="@dimen/d240"
+                android:layout_height="@dimen/d182"
+                android:layout_below="@+id/tv_state"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/d60"
+                android:src="@drawable/identity_reviewing" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_state_success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_state"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/d60"
+                android:layout_marginTop="@dimen/d100"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d70"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/reviewing_name"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d26" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d26" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d70"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/reviewing_type"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d26" />
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:gravity="center"
+                        android:text="@string/crad"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d26" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d70"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/reviewing_number"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d26" />
+
+                    <TextView
+                        android:id="@+id/tv_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/d30"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d26" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_state_fail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_state"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/d60"
+                android:layout_marginTop="@dimen/d100"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="@dimen/d20"
+                    android:text="@string/reviewing_fail_reason"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d26" />
+
+                <TextView
+                    android:id="@+id/tv_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="@dimen/d20"
+                    android:text="@string/reviewing_fail_reason_one"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d26" />
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="@dimen/d20"-->
+                    <!--android:text="@string/reviewing_fail_reason_tow"-->
+                    <!--android:textColor="@color/df_font"-->
+                    <!--android:textSize="@dimen/d26" />-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="@dimen/d20"-->
+                    <!--android:text="@string/reviewing_fail_reason_three"-->
+                    <!--android:textColor="@color/df_font"-->
+                    <!--android:textSize="@dimen/d26" />-->
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_state_reviewing_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_state"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d70"
+                android:gravity="left"
+                android:lineSpacingExtra="@dimen/d06"
+                android:padding="@dimen/d30"
+                android:text="@string/identity_state_reviewing_des"
+                android:textColor="@color/df_font"
+                android:textSize="@dimen/d28"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/tv_retry"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d90"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/d60"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:textSize="@dimen/d28"
+                android:background="@drawable/mine_login_bg"
+                android:gravity="center"
+                android:text="@string/authenticate_retry"
+                android:textColor="@color/white" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

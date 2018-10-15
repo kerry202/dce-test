@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.dagongniu.oax.customview.CommonToolbar
+        android:id="@+id/commontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.75"
+        android:background="@color/df_F8F8F8"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/d30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/old_pwd"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d26" />
+
+                <EditText
+                    android:id="@+id/old_pwd"
+                    android:layout_width="@dimen/d500"
+                    android:layout_height="@dimen/d70"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:background="@drawable/identity_item_bg"
+                    android:hint="@string/old_setpwd_lin_hint"
+                    android:maxLength="30"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/df_999999"
+                    android:textSize="@dimen/d26" />
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/d30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/new_pwd"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d26" />
+
+                <EditText
+                    android:id="@+id/new_pwd"
+                    android:layout_width="@dimen/d500"
+                    android:layout_height="@dimen/d70"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:background="@drawable/identity_item_bg"
+                    android:digits="@string/filter_vcode"
+                    android:hint="@string/setpwd_lin_hint"
+                    android:inputType="textPassword"
+                    android:textColor="@color/df_333333"
+                    android:textColorHint="@color/df_999999"
+                    android:textSize="@dimen/d26" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/d30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/confirmed_new_pwd"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d26" />
+
+                <EditText
+                    android:id="@+id/confirmed_new_pwd"
+                    android:layout_width="@dimen/d500"
+                    android:layout_height="@dimen/d70"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:background="@drawable/identity_item_bg"
+                    android:digits="@string/filter_vcode"
+                    android:hint="@string/repeat_setpwd_lin_hint"
+                    android:inputType="textPassword"
+                    android:textColor="@color/df_333333"
+                    android:textColorHint="@color/df_999999"
+                    android:textSize="@dimen/d26" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_commit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d90"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d100"
+                android:background="@color/df_cccccc"
+                android:gravity="center"
+                android:text="@string/dialog_commit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d28" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d30"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d30"
+                android:gravity="left"
+                android:text="@string/change_pwd_remind"
+                android:textColor="@color/df_999999" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</com.zhy.autolayout.AutoLinearLayout>

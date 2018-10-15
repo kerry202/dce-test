@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.dagongniu.oax">
+
+    <!-- 授予该程序使用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Required -->
+    <permission
+        android:name="cn.dagongniu.oax.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="cn.dagongniu.oax.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <application
+        android:name=".OAXApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/oax_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppNewTheme"
+        tools:replace="icon,label,theme">
+
+        <!-- 自适应适配设置 -->
+
+        <meta-data
+            android:name="design_width"
+            android:value="768" />
+
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <service
+            android:name=".vpn.core.LocalVpnService"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.factory.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/factory_provider_paths" />
+        </provider>
+        <!-- 存储路径7.0适配 end -->
+
+        <activity
+            android:name=".main.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoadTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 接收外部跳转 -->
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 表示该页面可以被隐式调用，必须加上该项 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 如果希望该应用可以通过浏览器的连接启动，则添加该项 -->
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="myoax"
+                    android:scheme="oax" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".vpn.AppManager"
+            android:excludeFromRecents="true"
+            android:label="@string/proxied_apps"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".account.SetLanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".account.DealPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.GuidanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".kline.KLinesActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".kline.KLinesFullScreenActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".main.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.BannerWebActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".vpn.MainVpnActivity" />
+        <activity android:name=".trading.MarketChooseActivity" />
+        <activity android:name=".trading.EntrustOrderActivity" />
+        <activity android:name=".main.AnnouncementMoreActivity" />
+        <activity android:name=".assets.WithTopRecordActivity" />
+        <activity
+            android:name=".assets.WithdTopSearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".assets.WithdrawalActivity" />
+        <activity android:name=".assets.ADDAddressActivity" />
+        <activity android:name=".assets.TopupActivity" />
+        <activity android:name=".account.MineInvitationActivity" />
+        <activity android:name=".account.AuthenticateActivity" />
+        <activity
+            android:name=".account.IdentityAuthenticationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".account.AuthenticationStateActivity" />
+        <activity android:name=".account.HelpActivity" />
+        <activity android:name=".account.SettingActivity" />
+        <activity android:name=".account.VersionActivity" />
+        <activity
+            android:name=".account.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".account.OaxRegisteredActivity" />
+        <activity android:name=".account.ForgotPasswordActivity" />
+        <activity android:name=".account.SetPasswordActivity" />
+        <activity
+            android:name=".account.SafetyActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".account.ChooseCountriesActivity" />
+        <activity android:name=".main.SearchCoinActivity" />
+        <activity android:name=".account.HelpDetailActivity" />
+        <activity android:name=".assets.AssetsDetailsActivity" />
+        <activity android:name=".account.GoogleVerifyActivity" />
+        <activity android:name=".account.ChangeLoginPwdActivity" />
+        <activity android:name=".account.VerifyActivity" />
+        <activity android:name=".account.AgreementActivity" />
+        <activity
+            android:name=".assets.RedEnvelopeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".assets.RedHelpActivity" />
+        <activity android:name=".assets.SendReceiveRedEnvelopeActivity" />
+        <activity android:name=".assets.OaxRedEnvelopeDetailsActivity" />
+
+        <!-- 分享配置 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ddshare.DDShareActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity android:name=".assets.ShareSuccessActivity" />
+        <activity android:name=".account.EarningsActivity" />
+        <activity android:name=".account.EarningsOverviewActivity"/>
+    </application>
+
+</manifest>

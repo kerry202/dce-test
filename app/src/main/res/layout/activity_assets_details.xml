@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".assets.AssetsDetailsActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.dagongniu.oax.customview.MyTradingToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d90" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/d30"
+            android:paddingRight="@dimen/d30">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d90">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/assets_get_sum"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+                <TextView
+                    android:id="@+id/tv_hold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="0.00000000"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/df_DEDEDE" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d90">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/assets_ky_sum"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+                <TextView
+                    android:id="@+id/tv_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="0.00000000"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/df_DEDEDE" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d90">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/assets_freeze_money"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+                <TextView
+                    android:id="@+id/tv_freeze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="0.00000000"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d30"
+            android:background="@color/df_F6F6F6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d90"
+            android:paddingLeft="@dimen/d30"
+            android:paddingRight="@dimen/d30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/assets_btc"
+                android:textColor="@color/df_333333"
+                android:textSize="@dimen/d28" />
+
+            <TextView
+                android:id="@+id/tv_btc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0.00000000"
+                android:textColor="@color/df_333333"
+                android:textSize="@dimen/d28" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d30"
+            android:background="@color/df_F6F6F6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d80">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d30"
+                android:text="@string/assets_market"
+                android:textColor="@color/df_333333"
+                android:textSize="@dimen/d22" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/df_DEDEDE" />
+
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/d100"
+            android:layout_marginLeft="@dimen/d20"
+            android:layout_marginRight="@dimen/d20"
+            android:layout_marginTop="@dimen/d20" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_height="@dimen/d100"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/d30"
+            android:paddingRight="@dimen/d30">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_withdrawal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d70"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/d15"
+                android:layout_toEndOf="@+id/rl_topup"
+                android:layout_toRightOf="@+id/rl_topup"
+                android:layout_weight="1"
+                android:background="@drawable/withdrawal_cancel_dialog_orange_bg"
+                android:gravity="center">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:layout_marginRight="@dimen/d10">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/im_topup"
+                        android:layout_toRightOf="@+id/im_topup"
+                        android:text="@string/assets_withdrawal"
+                        android:textColor="@color/df_F5A623"
+                        android:textSize="@dimen/d26" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_topup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d70"
+                android:layout_marginLeft="@dimen/d15"
+                android:layout_weight="1"
+                android:background="@drawable/top_up_cancel_dialog_orange_bg"
+                android:gravity="center">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d10"
+                    android:layout_marginRight="@dimen/d10">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/im_withdrawal"
+                        android:layout_toRightOf="@+id/im_withdrawal"
+                        android:text="@string/assets_topup"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/d26" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</com.zhy.autolayout.AutoRelativeLayout>

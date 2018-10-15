@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15">
+
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tv_market_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--/--"
+            android:textColor="@color/df_font"
+            android:textSize="@dimen/d26" />
+
+        <TextView
+            android:id="@+id/tv_left_coin_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d20"
+            android:text="--"
+            android:textColor="@color/df_999999"
+            android:textSize="@dimen/d28"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_applies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d05"
+            android:paddingLeft="@dimen/d05"
+            android:paddingRight="@dimen/d05"
+            android:text="--%"
+            android:textColor="@color/df_D8D8D8"
+            android:textSize="@dimen/d22" />
+
+        <TextView
+            android:id="@+id/tv_cny_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d05"
+            android:paddingLeft="@dimen/d05"
+            android:paddingRight="@dimen/d05"
+            android:text="≈¥--"
+            android:textColor="@color/df_font_hui"
+            android:textSize="@dimen/d16" />
+    </LinearLayout>
+
+
+</RelativeLayout>

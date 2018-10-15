@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trading.EntrustOrderActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ent_ord_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d90">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="@dimen/d90"
+            android:id="@+id/rl_close"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/im_left"
+                android:layout_width="@dimen/d70"
+                android:layout_height="@dimen/d70"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/d22"
+                android:src="@drawable/icon_back_black" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <net.lucode.hackware.magicindicator.MagicIndicator
+                    android:id="@+id/magic_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="@dimen/d30" />
+
+            </RelativeLayout>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_screening"
+            android:layout_width="@dimen/d90"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/im_right"
+                android:layout_width="@dimen/d27"
+                android:layout_height="@dimen/d27"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/screening_new" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:id="@+id/bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ent_ord_title"
+        android:background="@color/df_font_hui" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ent_ord_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bg_view" />
+
+
+</RelativeLayout>

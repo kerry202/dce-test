@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="@dimen/d28"
+        android:layout_height="@dimen/d28"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d30"
+        android:src="@drawable/search_log" />
+
+    <EditText
+
+        android:textColorHint="@color/df_999999"
+        android:hint="@string/home_hint_search"
+        android:maxLength="10"
+        android:textSize="@dimen/d26"
+        android:lines="1"
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d100"
+        android:layout_marginRight="@dimen/d200"
+        android:background="@null"
+        android:textColor="@color/df_080404" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="@dimen/d120"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingRight="@dimen/d10"
+        android:text="@string/cancel"
+        android:textColor="@color/df_gray_666"
+        android:textSize="@dimen/d26" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line"
+        android:layout_alignParentBottom="true"
+        android:background="@color/df_line" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

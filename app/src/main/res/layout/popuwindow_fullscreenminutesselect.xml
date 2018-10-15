@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/full_screen_kline_tab_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/kline_fullscreen_right_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_one_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/kline_popup_padding_top"
+        android:paddingLeft="@dimen/kline_popup_padding_left"
+        android:paddingRight="@dimen/kline_popup_padding_left"
+        android:paddingTop="@dimen/kline_popup_padding_top"
+        android:text="@string/kline_one_min"
+        android:textColor="@color/white"
+        android:textSize="@dimen/d24" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/tv_five_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/kline_popup_padding_top"
+        android:paddingLeft="@dimen/kline_popup_padding_left"
+        android:paddingRight="@dimen/kline_popup_padding_left"
+        android:paddingTop="@dimen/kline_popup_padding_top"
+        android:text="@string/kline_five_min"
+        android:textColor="@color/white"
+        android:textSize="@dimen/d24" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/grey" />
+
+
+    <TextView
+        android:id="@+id/tv_ten_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/kline_popup_padding_top"
+        android:paddingLeft="@dimen/kline_popup_padding_left"
+        android:paddingRight="@dimen/kline_popup_padding_left"
+        android:paddingTop="@dimen/kline_popup_padding_top"
+        android:text="@string/kline_ten_min"
+        android:textColor="@color/white"
+        android:textSize="@dimen/d24" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/grey"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_fifteen_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/kline_popup_padding_top"
+        android:paddingLeft="@dimen/kline_popup_padding_left"
+        android:paddingRight="@dimen/kline_popup_padding_left"
+        android:paddingTop="@dimen/kline_popup_padding_top"
+        android:text="@string/kline_fifteen_min"
+        android:textColor="@color/white"
+        android:textSize="@dimen/d24"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/grey" />
+
+
+    <TextView
+        android:id="@+id/tv_thirty_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/kline_popup_padding_top"
+        android:paddingLeft="@dimen/kline_popup_padding_left"
+        android:paddingRight="@dimen/kline_popup_padding_left"
+        android:paddingTop="@dimen/kline_popup_padding_top"
+        android:text="@string/kline_thirty_min"
+        android:textColor="@color/white"
+        android:textSize="@dimen/d24" />
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" filepath="$PROJECT_DIR$/FlycoTabLayout_Lib/FlycoTabLayout_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MPChartLib/MPChartLib.iml" filepath="$PROJECT_DIR$/MPChartLib/MPChartLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoFactory/PhotoFactory.iml" filepath="$PROJECT_DIR$/PhotoFactory/PhotoFactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StompAndroidlib/StompAndroidlib.iml" filepath="$PROJECT_DIR$/StompAndroidlib/StompAndroidlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UpdateAppUtils/UpdateAppUtils.iml" filepath="$PROJECT_DIR$/UpdateAppUtils/UpdateAppUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dce-test.iml" filepath="$PROJECT_DIR$/dce-test.iml" />
+    </modules>
+  </component>
+</project>

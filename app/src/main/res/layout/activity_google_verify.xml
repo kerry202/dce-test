@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.dagongniu.oax.customview.CommonToolbar
+        android:id="@+id/commontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.75"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/first_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginTop="@dimen/d50"
+                    android:gravity="left"
+                    android:lineSpacingExtra="@dimen/d30"
+                    android:text="@string/google_verify_first_des"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d28" />
+
+
+                <cn.dagongniu.oax.customview.OaxTextView
+                    android:id="@+id/second_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/first_des"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginTop="@dimen/d50"
+                    android:gravity="left"
+                    android:lineSpacingExtra="@dimen/d30"
+                    android:text="@string/google_verify_second_des"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d28" />
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_key_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/second_des"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginTop="@dimen/d30"
+                    android:gravity="center_vertical">
+
+
+                    <ImageView
+                        android:id="@+id/im_google"
+                        android:layout_width="@dimen/d200"
+                        android:layout_height="@dimen/d200"
+                        android:scaleType="center"
+                        android:src="@drawable/company_icon" />
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:orientation="vertical">
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_centerVertical="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/d40"
+                                    android:text="@string/keys"
+                                    android:textColor="@color/df_font"
+                                    android:textSize="@dimen/d26" />
+
+                                <TextView
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/rv_click_coyp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:text="@string/click_coyp"
+                                    android:textColor="@color/df_theme"
+                                    android:textSize="@dimen/d22"
+                                    android:layout_alignParentRight="true" />
+
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_google_key"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text=""
+                                    android:textColor="@color/df_font"
+                                    android:textSize="@dimen/d26" />
+
+
+
+
+
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+                            <cn.dagongniu.oax.customview.OaxTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/google_key_remind"
+                                android:textColor="@color/df_999999"
+                                android:textSize="@dimen/d24" />
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <TextView
+                    android:id="@+id/third_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_key_container"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginTop="@dimen/d30"
+                    android:gravity="left"
+                    android:lineSpacingExtra="@dimen/d30"
+                    android:text="@string/google_verify_third_des"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d28" />
+
+                <TextView
+                    android:id="@+id/tv_input_google_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/third_des"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginTop="@dimen/d30"
+                    android:gravity="left"
+                    android:lineSpacingExtra="@dimen/d30"
+                    android:text="@string/google_key"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d26" />
+
+                <EditText
+                    android:id="@+id/et_input_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_input_google_key"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginTop="@dimen/d40"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:background="@color/df_F2F2F2"
+                    android:hint="@string/google_key_hint"
+                    android:padding="@dimen/d20"
+                    android:textSize="@dimen/d26" />
+
+                <TextView
+                    android:textSize="@dimen/d28"
+                    android:id="@+id/tv_open"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d90"
+                    android:layout_below="@+id/et_input_key"
+                    android:layout_marginBottom="@dimen/d60"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginTop="@dimen/d50"
+                    android:background="@color/df_cccccc"
+                    android:gravity="center"
+                    android:text="@string/open_google_verify"
+                    android:textColor="@color/white" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

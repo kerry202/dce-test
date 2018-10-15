@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.dagongniu.oax.customview.CommonToolbar
+        android:id="@+id/commontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.75"
+        android:background="@color/df_F8F8F8"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/d30">
+
+                <RelativeLayout
+                    android:id="@+id/rl_internationalization"
+                    android:layout_width="@dimen/d120"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/d20">
+
+                    <TextView
+                        android:id="@+id/tv_internationalization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d20"
+                        android:text="+86"
+                        android:textColor="@color/df_333333"
+                        android:textSize="@dimen/d28" />
+
+                    <ImageView
+                        android:layout_width="@dimen/d25"
+                        android:layout_height="@dimen/d15"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/shanjiao_xia" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/phone_or_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d100"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_toRightOf="@+id/rl_internationalization"
+                    android:background="@null"
+                    android:textSize="@dimen/d28" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/split_line"
+                android:layout_marginLeft="@dimen/d30"
+                android:background="@color/df_line" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/d30">
+
+                <RelativeLayout
+                    android:id="@+id/rl_get_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/d20"
+                    android:layout_marginRight="@dimen/d30"
+                    android:layout_marginTop="@dimen/d20"
+                    android:background="@drawable/login_btu_cancel_grey_bg">
+
+                    <TextView
+                        android:id="@+id/tv_cede"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/registered_get_code"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/d24" />
+
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/verification_code"
+                    android:layout_width="@dimen/d500"
+                    android:layout_height="@dimen/d100"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/please_input_verification_code"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textSize="@dimen/d26" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_remind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d30"
+                android:gravity="left"
+                android:textColor="@color/df_999999"
+                android:textSize="@dimen/d24" />
+
+
+            <TextView
+                android:enabled="false"
+                android:id="@+id/tv_bind"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d90"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d250"
+                android:background="@drawable/login_btu_cancel_grey_bg"
+                android:gravity="center"
+                android:text="@string/bind"
+                android:textColor="@color/white"
+                android:textSize="@dimen/d30" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</com.zhy.autolayout.AutoLinearLayout>

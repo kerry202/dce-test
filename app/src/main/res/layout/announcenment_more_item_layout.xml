@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d30"
+        android:orientation="vertical">
+
+        <!--android:lines="2"-->
+        <!--android:maxEms="8"-->
+        <!--android:singleLine="true"-->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/d10"
+            android:lines="2"
+            android:textColor="@color/df_font"
+            android:textSize="@dimen/d26" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/d20">
+
+            <TextView
+                android:id="@+id/ann_tv_fbr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/publisher"
+                android:textColor="@color/df_gray_666"
+                android:textSize="@dimen/d22" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/d20"
+                android:layout_toEndOf="@+id/ann_tv_fbr"
+                android:layout_toRightOf="@+id/ann_tv_fbr"
+                android:text="大公牛官方"
+                android:textColor="@color/df_gray_666"
+                android:textSize="@dimen/d22"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tv_releasetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="2018-15-45"
+                android:textColor="@color/df_gray_666"
+                android:textSize="@dimen/d22" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/d20"
+            android:background="@color/df_theme_bg_gray" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

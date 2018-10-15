@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.dagongniu.oax.trading.view.TradingSellView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/d10"
+    android:background="@color/white">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/trading_sell_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d60">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/d10"
+                android:text="@string/trding_sell"
+                android:textColor="@color/df_font"
+                android:textSize="@dimen/d24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/df_theme_bg_gray" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/fall_rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d60"
+            android:layout_below="@+id/trading_sell_title"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_marginRight="@dimen/d30"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fall_count"
+                android:textColor="@color/df_font_hui"
+                android:textSize="@dimen/d20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/fall_jiage"
+                android:textColor="@color/df_font_hui"
+                android:textSize="@dimen/d20" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fall_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fall_rl_title"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_marginRight="@dimen/d30"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</cn.dagongniu.oax.trading.view.TradingSellView>

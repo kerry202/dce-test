@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/df_F8F8F8"
+    android:orientation="vertical"
+    tools:context=".assets.RedHelpActivity">
+
+    <cn.dagongniu.oax.customview.MyTradingToolbar
+        android:id="@+id/assets_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/assets_toolbar"
+        app:srlDragRate="0.75"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/d30"
+                android:paddingRight="@dimen/d30"
+                android:paddingTop="@dimen/d30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/red_help_1"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/d15"
+                    android:layout_marginTop="@dimen/d15"
+                    android:background="@color/df_F8F8F8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d20"
+                    android:lineSpacingExtra="@dimen/d20"
+                    android:text="@string/red_help_2"
+                    android:textColor="@color/df_gray_666"
+                    android:textSize="@dimen/d26" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d20"
+                android:background="@color/df_F8F8F8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/d30"
+                android:paddingRight="@dimen/d30"
+                android:paddingTop="@dimen/d30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/red_help_3"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/d15"
+                    android:layout_marginTop="@dimen/d15"
+                    android:background="@color/df_F8F8F8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d20"
+                    android:lineSpacingExtra="@dimen/d20"
+                    android:text="@string/red_help_4"
+                    android:textColor="@color/df_gray_666"
+                    android:textSize="@dimen/d26" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d20"
+                android:background="@color/df_F8F8F8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/d30"
+                android:paddingRight="@dimen/d30"
+                android:paddingTop="@dimen/d30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/red_help_5"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/d15"
+                    android:layout_marginTop="@dimen/d15"
+                    android:background="@color/df_F8F8F8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d20"
+                    android:lineSpacingExtra="@dimen/d20"
+                    android:text="@string/red_help_6"
+                    android:textColor="@color/df_gray_666"
+                    android:textSize="@dimen/d26" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d20"
+                android:background="@color/df_F8F8F8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/d30"
+                android:paddingRight="@dimen/d30"
+                android:paddingTop="@dimen/d30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/red_help_7"
+                    android:textColor="@color/df_333333"
+                    android:textSize="@dimen/d28" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/d15"
+                    android:layout_marginTop="@dimen/d15"
+                    android:background="@color/df_F8F8F8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d20"
+                    android:lineSpacingExtra="@dimen/d20"
+                    android:text="@string/red_help_8"
+                    android:textColor="@color/df_gray_666"
+                    android:textSize="@dimen/d26" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d20"
+            android:layout_marginTop="@dimen/d20"
+            android:text="@string/red_service"
+            android:textColor="@color/df_999999"
+            android:textSize="@dimen/d26" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/fall_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/fall_item_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----"
+            android:textColor="@color/df_font"
+            android:textSize="@dimen/d26" />
+
+        <TextView
+            android:id="@+id/fall_item_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="----"
+            android:textColor="@color/button_bu"
+            android:textSize="@dimen/d26" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

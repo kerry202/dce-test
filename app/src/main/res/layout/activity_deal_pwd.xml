@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/df_theme_bg_gray"
+    android:orientation="vertical"
+    tools:context=".account.DealPwdActivity">
+
+
+    <cn.dagongniu.oax.customview.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hideRight="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d320">
+
+        <ImageView
+            android:layout_width="@dimen/d230"
+            android:layout_height="@dimen/d150"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/lightgoldenyellow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"
+            android:textColor="@color/font"
+            android:textSize="@dimen/d36" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d100"
+        android:layout_marginLeft="@dimen/d50"
+        android:layout_marginRight="@dimen/d50">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/deal_setpwd"
+            android:inputType="numberPassword"
+            android:maxLength="10"
+            android:textColor="@color/font"
+            android:textSize="@dimen/d32"
+            android:theme="@style/MyEditText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d100"
+        android:layout_marginLeft="@dimen/d50"
+        android:layout_marginRight="@dimen/d50">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/deal_yespwd"
+            android:inputType="numberPassword"
+            android:maxLength="10"
+            android:textColor="@color/font"
+            android:textSize="@dimen/d32"
+            android:theme="@style/MyEditText" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="@dimen/d300"
+            android:layout_height="@dimen/d80"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/d80"
+            android:background="@drawable/btn_cicle_bg_brown_passed"
+            android:text="@string/next"
+            android:textColor="@color/font"
+            android:textSize="@dimen/d32" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

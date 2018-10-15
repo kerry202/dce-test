@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.dagongniu.oax.customview.EditTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_jian"
+            android:layout_width="@dimen/d50"
+            android:layout_height="@dimen/d60"
+            android:background="@drawable/border_write"
+            android:gravity="center"
+            android:text="@string/jian"
+            android:textSize="@dimen/d28"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d60"
+            android:layout_toEndOf="@+id/tv_jian"
+            android:layout_toLeftOf="@+id/tv_jia"
+            android:layout_toRightOf="@+id/tv_jian"
+            android:layout_toStartOf="@+id/tv_jia"
+            android:background="@drawable/edittext_state"
+            android:gravity="center"
+            android:hint="@string/hint"
+            android:inputType="number"
+            android:textColorHint="@color/df_font_gray"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/d22" />
+
+        <TextView
+            android:id="@+id/tv_jia"
+            android:layout_width="@dimen/d50"
+            android:layout_height="@dimen/d60"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/border_write"
+            android:gravity="center"
+            android:text="@string/jia"
+            android:textSize="@dimen/d28"
+            android:textStyle="bold" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</cn.dagongniu.oax.customview.EditTextView>
