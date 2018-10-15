@@ -28,19 +28,19 @@ android {
     }
 
     signingConfigs {
-//        debug {
-//            keyAlias 'oax'
-//            keyPassword 'oax2018'
-//            storeFile file('D:/android/project/DCE/Dagongniu/app/keystore.jks')
-//            storePassword 'oax2018'
-//        }
-//
-//        release {
-//            keyAlias 'oax'
-//            keyPassword 'oax2018'
-//            storeFile file('D:/android/project/DCE/Dagongniu/app/keystore.jks')
-//            storePassword 'oax2018'
-//        }
+        debug {
+            keyAlias 'oax'
+            keyPassword 'oax2018'
+            storeFile file('D:\\Test2\\dce-test\\app/keystore.jks')
+            storePassword 'oax2018'
+        }
+
+        release {
+            keyAlias 'oax'
+            keyPassword 'oax2018'
+            storeFile file('D:\\Test2\\dce-test\\app/keystore.jks')
+            storePassword 'oax2018'
+        }
     }
 
     buildTypes {
